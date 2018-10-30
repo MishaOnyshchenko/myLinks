@@ -37,15 +37,14 @@ public class LinkService {
         return linkEntityList;
     }
 
+
     public String addLink(LinkEntity linkEntity) {
 
-        Session currentSession = sessionFactory.getCurrentSession();
-        currentSession.save(linkEntity);
-        return "link added";
+        return linkRepository.addLink(linkEntity);
     }
 
 
-    public void deleteLink(){
+    public void deleteLink() {
 
     }
 

@@ -15,7 +15,7 @@
 
 <form action="/show/add" method="get" modelAttribute="link">
     <input type="text" name = "name" placeholder="Link name">
-    <input type="text" name = "surname" placeholder="Address">
+    <input type="text" name = "address" placeholder="Address">
     <input type="submit" value="add">
 </form>
 <br/>

@@ -33,26 +33,27 @@ public class AddController {
 
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public String add(@ModelAttribute LinkEntity linkEntity) {
-        ArrayList<String> links = linkService.allLinks();
-        links.add(linkEntity.getName());
+
+        linkService.addLink(linkEntity);
+
         System.out.print(linkEntity.getName() + " " + linkEntity.getAddress());
         return "redirect:/show";
     }
 
 
-    @RequestMapping(value = "/delAll", method = RequestMethod.GET)
-    public String deleteAll(@ModelAttribute LinkEntity linkEntity) {
-        ArrayList<String> links = linkService.allLinks();
-        links.clear();
-        return "redirect:/show";
-    }
+//    @RequestMapping(value = "/delAll", method = RequestMethod.GET)
+//    public String deleteAll(@ModelAttribute LinkEntity linkEntity) {
+//        ArrayList<String> links = linkService.allLinks();
+//        links.clear();
+//        return "redirect:/show";
+//    }
 
 
-    @RequestMapping(value = "/del", method = RequestMethod.GET)
-    public String delete(@ModelAttribute LinkEntity linkEntity) {
-        ArrayList<String> links = linkService.allLinks();
-        links.remove(linkEntity.getName());
-        System.out.println(linkEntity.getName());
-        return "redirect:/show";
-    }
+//    @RequestMapping(value = "/del", method = RequestMethod.GET)
+//    public String delete(@ModelAttribute LinkEntity linkEntity) {
+//        ArrayList<String> links = linkService.allLinks();
+//        links.remove(linkEntity.getName());
+//        System.out.println(linkEntity.getName());
+//        return "redirect:/show";
+//    }
 }
