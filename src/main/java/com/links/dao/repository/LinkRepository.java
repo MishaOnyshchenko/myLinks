@@ -58,6 +58,14 @@ public class LinkRepository {
         }
     }
 
+    public void deleteCategoryByName(CategoryEntity categoryEntity){
+        Session currentSession = sessionFactory.getCurrentSession();
+        if(categoryEntity != null){
+            currentSession.delete(categoryEntity);
+            log.info(categoryEntity + " deleted");
+        }
+    }
+
 
 
 

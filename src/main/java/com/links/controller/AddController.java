@@ -23,11 +23,11 @@ public class AddController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String showPage(Model model) {
-        model.addAttribute("message", "It's a showtime");
-
+        model.addAttribute("message", "Your bookmarks");
         List<LinkEntity> links = linkService.getLinkEntityList();
         model.addAttribute("links", links);
 
+        model.addAttribute("message2", "Your bookmarks sorted by the next categories");
         List<CategoryEntity> categories = linkService.getCategoryEntityList();
         model.addAttribute("categories", categories);
 
@@ -52,11 +52,15 @@ public class AddController {
     }
 
 
-    @RequestMapping(value = "/del", method = RequestMethod.GET)
-    public String delete(@ModelAttribute LinkEntity linkEntity) {
-
+    @RequestMapping(value = "/del/link", method = RequestMethod.GET)
+    public String deleteLink(@ModelAttribute LinkEntity linkEntity) {
         linkService.deleteLink(linkEntity);
+        return "redirect:/show";
+    }
 
+    @RequestMapping(value = "/del/category", method = RequestMethod.GET)
+    public String deleteCategory(@ModelAttribute CategoryEntity categoryEntity) {
+        linkService.deleteCategory(categoryEntity);
         return "redirect:/show";
     }
 

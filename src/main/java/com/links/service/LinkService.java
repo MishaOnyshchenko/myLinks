@@ -56,10 +56,9 @@ public class LinkService {
     }
 
     public void addCategory(CategoryEntity categoryEntity) {
-
         linkRepository.addCategory(categoryEntity);
         log.info("the folder was sent to a repository: " + categoryEntity.getName());
-        updateLinkEntityList();
+        updateCategoryEntityList();
     }
 
 
@@ -70,6 +69,17 @@ public class LinkService {
 
                 log.info(entity + " has sent for deleting");
                 updateLinkEntityList();
+            }
+        }
+    }
+
+    public void deleteCategory(CategoryEntity categoryEntity) {
+        for (CategoryEntity entity: categoryEntityList) {
+            if (entity.getName().equals(categoryEntity.getName())) {
+                linkRepository.deleteCategoryByName(entity);
+
+                log.info(entity + " has sent for deleting");
+                updateCategoryEntityList();
             }
         }
     }
