@@ -1,6 +1,7 @@
 package com.links.controller;
 
 
+import com.links.dao.entity.CategoryEntity;
 import com.links.dao.entity.LinkEntity;
 import com.links.service.LinkService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +11,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -23,37 +23,41 @@ public class AddController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String showPage(Model model) {
+        model.addAttribute("message", "It's a showtime");
 
-        List<LinkEntity> links = linkService.linkEntityList();
+        List<LinkEntity> links = linkService.getLinkEntityList();
         model.addAttribute("links", links);
+
+        List<CategoryEntity> categories = linkService.getCategoryEntityList();
+        model.addAttribute("categories", categories);
 
         return "/add";
     }
 
 
-    @RequestMapping(value = "/add", method = RequestMethod.GET)
-    public String add(@ModelAttribute LinkEntity linkEntity) {
+    @RequestMapping(value = "/add/link", method = RequestMethod.GET)
+    public String addLink(@ModelAttribute LinkEntity linkEntity) {
 
         linkService.addLink(linkEntity);
 
-        System.out.print(linkEntity.getName() + " " + linkEntity.getAddress());
+        return "redirect:/show";
+    }
+
+    @RequestMapping(value = "/add/category", method = RequestMethod.GET)
+    public String addCategory(@ModelAttribute CategoryEntity categoryEntity) {
+
+        linkService.addCategory(categoryEntity);
+
         return "redirect:/show";
     }
 
 
-//    @RequestMapping(value = "/delAll", method = RequestMethod.GET)
-//    public String deleteAll(@ModelAttribute LinkEntity linkEntity) {
-//        ArrayList<String> links = linkService.allLinks();
-//        links.clear();
-//        return "redirect:/show";
-//    }
+    @RequestMapping(value = "/del", method = RequestMethod.GET)
+    public String delete(@ModelAttribute LinkEntity linkEntity) {
 
+        linkService.deleteLink(linkEntity);
 
-//    @RequestMapping(value = "/del", method = RequestMethod.GET)
-//    public String delete(@ModelAttribute LinkEntity linkEntity) {
-//        ArrayList<String> links = linkService.allLinks();
-//        links.remove(linkEntity.getName());
-//        System.out.println(linkEntity.getName());
-//        return "redirect:/show";
-//    }
+        return "redirect:/show";
+    }
+
 }

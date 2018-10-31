@@ -1,52 +1,76 @@
 package com.links.service;
 
+import com.links.controller.LinkController;
+import com.links.dao.entity.CategoryEntity;
 import com.links.dao.entity.LinkEntity;
 import com.links.dao.repository.LinkRepository;
-import lombok.extern.log4j.Log4j2;
-import lombok.extern.slf4j.Slf4j;
-import org.hibernate.Session;
+import lombok.Data;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+
 @Service
+@Data
 public class LinkService {
+
+    static final Logger log = LoggerFactory.getLogger(LinkController.class);
 
     @Autowired
     private LinkRepository linkRepository;
 
     List<LinkEntity> linkEntityList = new ArrayList<>();
+    List<CategoryEntity> categoryEntityList = new ArrayList<>();
 
 
-    public ArrayList<String> allLinks() {
-        ArrayList<String> bookmarks = new ArrayList<>();
-
-        linkEntityList = linkRepository.linkList();
-        System.out.println("***LinkList*** = " + linkEntityList.toString());
-
-        for (LinkEntity e : linkEntityList) {
-            bookmarks.add(e.getName());
-        }
-        return bookmarks;
-    }
-
-
-    public List<LinkEntity> linkEntityList() {
+    public List<LinkEntity> allLinks() {
+        updateLinkEntityList();
+        log.info("***LinkList*** = " + linkEntityList.toString());
         return linkEntityList;
     }
 
-
-    public String addLink(LinkEntity linkEntity) {
-
-        return linkRepository.addLink(linkEntity);
+    public List<CategoryEntity> allCategories() {
+        updateCategoryEntityList();
+        log.info("***CategoryList*** = " + categoryEntityList.toString());
+        return categoryEntityList;
     }
 
 
-    public void deleteLink() {
-
+    public void updateLinkEntityList() {
+        linkEntityList = linkRepository.linkList();
+    }
+    public void updateCategoryEntityList() {
+        categoryEntityList = linkRepository.categoryList();
     }
 
 
+    public void addLink(LinkEntity linkEntity) {
+        linkRepository.addLink(linkEntity);
+        log.info("the link was sent to a repository: " + linkEntity.getName());
+        updateLinkEntityList();
+    }
+
+    public void addCategory(CategoryEntity categoryEntity) {
+
+        linkRepository.addCategory(categoryEntity);
+        log.info("the folder was sent to a repository: " + categoryEntity.getName());
+        updateLinkEntityList();
+    }
+
+
+    public void deleteLink(LinkEntity linkEntity) {
+        for (LinkEntity entity : linkEntityList) {
+            if (entity.getName().equals(linkEntity.getName())) {
+                linkRepository.deleteLinkByName(entity);
+
+                log.info(entity + " has sent for deleting");
+                updateLinkEntityList();
+            }
+        }
+    }
 }

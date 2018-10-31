@@ -1,17 +1,14 @@
 package com.links.dao.entity;
 
-import lombok.*;
+import lombok.Data;
 
 import javax.persistence.*;
 
-
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Builder
 @Entity
 @Table
-public class LinkEntity {
+
+public class CategoryEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -19,9 +16,6 @@ public class LinkEntity {
 
     @Column
     private String name;
-
-    @Column
-    private String url;
 
     @Column
     private String description;

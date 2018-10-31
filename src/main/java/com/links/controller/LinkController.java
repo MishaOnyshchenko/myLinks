@@ -1,5 +1,7 @@
 package com.links.controller;
 
+import com.links.dao.entity.CategoryEntity;
+import com.links.dao.entity.LinkEntity;
 import com.links.service.LinkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -7,7 +9,10 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+
+
 import java.util.ArrayList;
+import java.util.List;
 
 @Controller
 @RequestMapping("/")
@@ -19,21 +24,29 @@ public class LinkController {
 
     @RequestMapping(method = RequestMethod.GET)
     public String showWelcome(Model model) {
-
-        ArrayList<String> links = linkService.allLinks();
-
+        List<LinkEntity> links = linkService.allLinks();
         model.addAttribute("links", links);
+
         model.addAttribute("message", "Welcome to myLinks");
+
+        List<CategoryEntity> categories = linkService.allCategories();
+        model.addAttribute("categories", categories);
+
+
 
         return "welcome";
     }
 
 
     @RequestMapping(value = "go", method = RequestMethod.GET)
-    public String show(Model model) {
-
-        model.addAttribute("message", "It's a showtime");
-
+    public String show() {
         return "redirect:/show";
+    }
+
+    @RequestMapping(value = "open", method = RequestMethod.GET)
+    public String openPage(Model model){
+
+
+        return "redirect:/https://www.google.com.ua";
     }
 }
