@@ -9,8 +9,8 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@Entity
-@Table
+@Entity(name = "LinkEntity")
+@Table(name="link_entity", schema = "myapp")
 public class LinkEntity {
 
     @Id
@@ -25,4 +25,11 @@ public class LinkEntity {
 
     @Column
     private String description;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    private CategoryEntity categoryEntity;
+
+
+
+
 }

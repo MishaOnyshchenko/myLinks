@@ -1,7 +1,12 @@
+com\links\dao\entity\CategoryEntity.class
 com\links\config\Initializer.class
-com\links\entity\Link.class
 com\links\controller\LinkController.class
-com\links\entity\Link$LinkBuilder.class
-com\links\config\WebAppConfig.class
-com\links\controller\AddController.class
+com\links\dao\entity\LinkEntity.class
+com\links\service\LinkService.class
 com\links\config\HibernateConfig.class
+com\links\dao\repository\CategoryRepository.class
+com\links\dao\entity\LinkEntity$LinkEntityBuilder.class
+com\links\dao\repository\LinkRepository.class
+com\links\config\WebAppConfig.class
+com\links\dao\entity\CategoryEntity$CategoryEntityBuilder.class
+com\links\controller\AddController.class

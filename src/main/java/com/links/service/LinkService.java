@@ -4,7 +4,10 @@ import com.links.controller.LinkController;
 import com.links.dao.entity.CategoryEntity;
 import com.links.dao.entity.LinkEntity;
 import com.links.dao.repository.LinkRepository;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,10 +16,14 @@ import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.transaction.annotation.Transactional;
 
-
+@Transactional
 @Service
 @Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class LinkService {
 
     static final Logger log = LoggerFactory.getLogger(LinkController.class);
@@ -50,14 +57,20 @@ public class LinkService {
 
 
     public void addLink(LinkEntity linkEntity) {
+
+        CategoryEntity categoryEntity = linkRepository.categoryList().get(0);
+
+        linkEntity.setCategoryEntity(categoryEntity);
+        System.out.println("@@@@@@@@@@ category " + categoryEntity + "added to " + linkEntity);
+
         linkRepository.addLink(linkEntity);
-        log.info("the link was sent to a repository: " + linkEntity.getName());
+        log.info("****** Link was sent to a repository: " + linkEntity);
         updateLinkEntityList();
     }
 
     public void addCategory(CategoryEntity categoryEntity) {
         linkRepository.addCategory(categoryEntity);
-        log.info("the folder was sent to a repository: " + categoryEntity.getName());
+        log.info("the folder was sent to a repository: " + categoryEntity);
         updateCategoryEntityList();
     }
 

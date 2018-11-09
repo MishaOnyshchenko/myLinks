@@ -1,8 +1,8 @@
 package com.links.config;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -13,10 +13,11 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration //собственно эта аннотация и говорит о том, что данный класс является Java
 @EnableWebMvc //эта аннотация разрешает нашему проекту использовать MVC;
 @ComponentScan({"com.links"}) //говорит, где искать компоненты проекта.
-//WebMvcConfigurerAdapter — унаследовавшись от этого класса мы получим возможность сконфигурировать ResourceLocations.
+@PropertySource({"classpath:application.properties"})
+//@PropertySource({"classpath:validation.properties", "classpath:application.properties"})
 public class WebAppConfig extends WebMvcConfigurerAdapter {
 
-    //переопределив данный метод мы сможем указать где будут лежать ресурсы нашего проекта, такие как css, image, js и другие.
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/resources/**").addResourceLocations("/resources/")
@@ -35,7 +36,7 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
     @Bean
     public ReloadableResourceBundleMessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-        messageSource.setBasename("classpath:messages");
+        messageSource.setBasename("classpath:validation.properties");
         messageSource.setDefaultEncoding("UTF-8");
         return messageSource;
     }

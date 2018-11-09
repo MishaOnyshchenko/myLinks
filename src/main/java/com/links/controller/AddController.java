@@ -7,9 +7,7 @@ import com.links.service.LinkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -21,7 +19,7 @@ public class AddController {
     private LinkService linkService;
 
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping()
     public String showPage(Model model) {
         model.addAttribute("message", "Your bookmarks");
         List<LinkEntity> links = linkService.getLinkEntityList();
@@ -35,30 +33,31 @@ public class AddController {
     }
 
 
-    @RequestMapping(value = "/add/link", method = RequestMethod.GET)
+    @RequestMapping(value = "/add/link")
     public String addLink(@ModelAttribute LinkEntity linkEntity) {
 
         linkService.addLink(linkEntity);
+        System.out.println("!!!SENT to SERVICE for SAVING!!!!!!!! " + linkEntity);
 
         return "redirect:/show";
     }
 
-    @RequestMapping(value = "/add/category", method = RequestMethod.GET)
-    public String addCategory(@ModelAttribute CategoryEntity categoryEntity) {
+    @RequestMapping(value = "/add/category")
+    public String addCategory(@ModelAttribute CategoryEntity category) {
 
-        linkService.addCategory(categoryEntity);
+        linkService.addCategory(category);
 
         return "redirect:/show";
     }
 
 
-    @RequestMapping(value = "/del/link", method = RequestMethod.GET)
+    @RequestMapping(value = "/del/link")
     public String deleteLink(@ModelAttribute LinkEntity linkEntity) {
         linkService.deleteLink(linkEntity);
         return "redirect:/show";
     }
 
-    @RequestMapping(value = "/del/category", method = RequestMethod.GET)
+    @RequestMapping(value = "/del/category")
     public String deleteCategory(@ModelAttribute CategoryEntity categoryEntity) {
         linkService.deleteCategory(categoryEntity);
         return "redirect:/show";

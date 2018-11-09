@@ -6,6 +6,7 @@ import com.links.service.LinkService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -22,7 +23,7 @@ public class LinkController {
     private LinkService linkService;
 
 
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping
     public String showWelcome(Model model) {
         List<LinkEntity> links = linkService.allLinks();
         model.addAttribute("links", links);
@@ -32,21 +33,14 @@ public class LinkController {
         List<CategoryEntity> categories = linkService.allCategories();
         model.addAttribute("categories", categories);
 
-
-
         return "welcome";
     }
 
 
-    @RequestMapping(value = "go", method = RequestMethod.GET)
+    @RequestMapping(value = "go")
     public String show() {
         return "redirect:/show";
     }
 
-    @RequestMapping(value = "open", method = RequestMethod.GET)
-    public String openPage(Model model){
 
-
-        return "redirect:/https://www.google.com.ua";
-    }
 }

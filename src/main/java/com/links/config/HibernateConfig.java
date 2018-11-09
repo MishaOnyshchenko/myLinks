@@ -11,6 +11,8 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import org.springframework.orm.jpa.JpaTransactionManager;
+import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
@@ -31,12 +33,19 @@ public class HibernateConfig {
     private String jdbcUrl;
     @Value("${spring.datasource.driverClassName}")
     private String driverClassName;
-    @Value("${hibernate.dialect}")
-    private String dialect;
+
     @Value("${packagesToScan}")
     private String scanPackage;
     @Value("${hibernate.hbm2ddl.auto}")
     private String ddlAuto;
+    @Value("${hibernate.dialect}")
+    private String dialect;
+
+
+    @Value("${spring.datasource.initialization-mode}")
+    private String initDataSQl;
+    @Value("${spring.jpa.properties.hibernate.enable_lazy_load_no_trans}")
+    private String lazyLoad;
 
     @Bean
     public DataSource dataSource() {
@@ -54,16 +63,22 @@ public class HibernateConfig {
         sessionFactoryBean.setDataSource(dataSource());
         sessionFactoryBean.setPackagesToScan(scanPackage);
         sessionFactoryBean.setHibernateProperties(hibernateProperties());
+
+
         return sessionFactoryBean;
     }
 
-    private Properties hibernateProperties() {
-        Properties properties = new Properties();
-        properties.put("hibernate.dialect", dialect);
-        properties.put("hibernate.hbm2ddl.auto", ddlAuto);
+//    @Bean
+//    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
+//        LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
+//        entityManagerFactoryBean.setDataSource(dataSource());
+//        entityManagerFactoryBean.setPackagesToScan(scanPackage);
+//        entityManagerFactoryBean.setPersistenceProviderClass(HibernatePersistence.class);
+//        entityManagerFactoryBean.setJpaProperties(hibernateProperties());
+//
+//        return entityManagerFactoryBean;
+//    }
 
-        return properties;
-    }
 
     @Bean
     @Autowired
@@ -72,4 +87,26 @@ public class HibernateConfig {
         transactionManager.setSessionFactory(sessionFactory);
         return transactionManager;
     }
+    //    @Bean
+//    public JpaTransactionManager transactionManager() {
+//        JpaTransactionManager transactionManager = new JpaTransactionManager();
+//        transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
+//
+//        return transactionManager;
+//    }
+
+
+    private Properties hibernateProperties() {
+        Properties properties = new Properties();
+        properties.put("hibernate.dialect", dialect);
+        properties.put("hibernate.hbm2ddl.auto", ddlAuto);
+        properties.put("spring.datasource.initialization-mode", initDataSQl);
+        properties.put("spring.jpa.properties.hibernate.enable_lazy_load_no_trans", lazyLoad);
+
+        return properties;
+    }
+
+
+
+
 }

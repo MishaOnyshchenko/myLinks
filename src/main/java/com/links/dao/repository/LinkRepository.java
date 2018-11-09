@@ -27,6 +27,7 @@ public class LinkRepository {
     public List<LinkEntity> linkList() {
         Session currentSession = sessionFactory.getCurrentSession();
         Query<LinkEntity> theQuery = currentSession.createQuery("from LinkEntity", LinkEntity.class);
+
         return theQuery.getResultList();
     }
 
@@ -36,17 +37,34 @@ public class LinkRepository {
         return theQuery.getResultList();
     }
 
+//    public CategoryEntity getCategoryByName(String name) {
+//        Session currentSession = sessionFactory.getCurrentSession();
+//        CategoryEntity categoryEntity = (CategoryEntity)currentSession.createQuery("FROM CategoryEntity ce WHERE ce.name =:name").setParameter("name", name).uniqueResult();
+//        return categoryEntity;
+//    }
+    //    public LinkEntity LinkByName(String name) {
+//        Session currentSession = sessionFactory.getCurrentSession();
+//        LinkEntity link = (LinkEntity) currentSession.createQuery("FROM LinkEntity le  WHERE le.name =:name")
+//                .setParameter("name", name)
+//                .uniqueResult();
+//        return link;
+//    }
+
+
 
     public void addLink(LinkEntity linkEntity) {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.saveOrUpdate(linkEntity);
         log.info("link added: " + linkEntity);
+//        currentSession.flush();
+//        currentSession.clear();
     }
 
     public void addCategory(CategoryEntity categoryEntity) {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.saveOrUpdate(categoryEntity);
         log.info("link added: " + categoryEntity);
+//        currentSession.flush();
     }
 
 
@@ -56,6 +74,8 @@ public class LinkRepository {
             currentSession.delete(linkEntity);
             log.info(linkEntity + " deleted");
         }
+//        currentSession.flush();
+//        currentSession.clear();
     }
 
     public void deleteCategoryByName(CategoryEntity categoryEntity){
@@ -64,6 +84,9 @@ public class LinkRepository {
             currentSession.delete(categoryEntity);
             log.info(categoryEntity + " deleted");
         }
+//        currentSession.flush();
+//        currentSession.clear();
+
     }
 
 
