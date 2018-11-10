@@ -7,88 +7,98 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b4a9df03-11be-4dfb-8b9b-6b8357eba110" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/links/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/links/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/links/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/validation.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addMenu.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/846c9a26-d4d0-419e-bc0a-c93a955956ac.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/846c9a26-d4d0-419e-bc0a-c93a955956ac.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/846c9a26-d4d0-419e-bc0a-c93a955956ac/storage_v2/_src_/database/links.uU8jBg/schema/pg_toast.33HYYw.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/846c9a26-d4d0-419e-bc0a-c93a955956ac/storage_v2/_src_/database/links.uU8jBg/schema/pg_toast.33HYYw.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/846c9a26-d4d0-419e-bc0a-c93a955956ac/storage_v2/_src_/database/links.uU8jBg/schema/public.abK9xQ.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/846c9a26-d4d0-419e-bc0a-c93a955956ac/storage_v2/_src_/database/links.uU8jBg/schema/public.abK9xQ.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/846c9a26-d4d0-419e-bc0a-c93a955956ac.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myLink.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/add.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/addMenu.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/HibernateConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/Initializer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/WebAppConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/controller/AddController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/controller/LinkController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/dao/entity/CategoryEntity$CategoryEntityBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/dao/entity/CategoryEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/dao/entity/LinkEntity$LinkEntityBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/dao/entity/LinkEntity.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/dao/repository/CategoryRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/dao/repository/LinkRepository.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/service/LinkService$LinkServiceBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/service/LinkService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/logback.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/validation.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/aspectjrt-1.9.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/cdi-api-1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/cglib-nodep-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/classmate-1.3.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/el-api-2.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/guava-18.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/hibernate-core-5.2.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/hibernate-entitymanager-5.2.4.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/jandex-2.0.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/javassist-3.18.2-GA.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/jna-4.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/jna-platform-4.1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/jsr250-api-1.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/logback-classic-1.0.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/logback-core-1.0.13.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/lombok-1.18.2.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/p6spy-3.7.0.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/postgresql-9.4-1200-jdbc41.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/slf4j-api-1.7.25.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/slf4j-simple-1.7.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-aop-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-beans-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-context-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-core-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-data-commons-2.1.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-data-jpa-2.1.1.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-expression-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-jcl-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-jdbc-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-orm-4.3.13.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-security-acl-5.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-security-config-5.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-security-core-5.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-security-taglibs-5.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-security-web-5.0.0.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-tx-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-web-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/spring-webmvc-5.0.2.RELEASE.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/lib/waffle-jna-1.7.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/welcome.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/addMenu.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/links/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/config/HibernateConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/links/config/WebAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/config/WebAppConfig.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/links/controller/AddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/controller/AddController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/links/controller/LinkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/controller/LinkController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/links/dao/entity/LinkEntity$LinkEntityBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/dao/entity/LinkEntity$LinkEntityBuilder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/links/dao/entity/LinkEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/dao/entity/LinkEntity.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/links/dao/repository/LinkRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/dao/repository/LinkRepository.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/links/service/LinkService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/service/LinkService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/add.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/classes/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/classes/com/links/config/HibernateConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/classes/com/links/config/Initializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/classes/com/links/config/WebAppConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/classes/com/links/controller/AddController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/classes/com/links/controller/LinkController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/classes/com/links/dao/entity/LinkEntity$LinkEntityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/classes/com/links/dao/entity/LinkEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/classes/com/links/dao/repository/LinkRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/classes/com/links/service/LinkService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/cdi-api-1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/cglib-nodep-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/classmate-1.3.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/commons-logging-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/dom4j-1.6.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/el-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/geronimo-jta_1.1_spec-1.1.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/hibernate-commons-annotations-5.0.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/hibernate-core-5.2.4.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/jandex-2.0.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/javassist-3.18.2-GA.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/javax.inject-1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/javax.servlet-api-3.1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/jboss-logging-3.3.0.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/jsr250-api-1.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/jstl-1.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/lombok-1.18.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/p6spy-3.7.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/postgresql-9.1-901-1.jdbc4.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/spring-aop-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/spring-beans-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/spring-context-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/spring-core-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/spring-expression-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/spring-jdbc-4.3.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/spring-orm-4.3.13.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/spring-tx-4.3.9.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/spring-web-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/lib/spring-webmvc-4.3.6.RELEASE.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT/WEB-INF/welcome.jsp" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -112,41 +122,48 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="links@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="links@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="links@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="links: database" type="6d9b600a:PostgresImplModel$Database" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="links@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="links: database" type="6d9b600a:PostgresImplModel$Database" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="links@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="links: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="myapp: schema" type="a16502c0:PostgresImplModel$Schema" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="links@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="links: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="links: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
+        <item name="tables" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
       </path>
     </expand>
     <select />
@@ -155,14 +172,14 @@
     <session id="45784966">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="24" />
+          <entry key="project.closed" value="26" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="1" />
           <entry key="project.open.time.13" value="3" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="4" />
-          <entry key="project.open.time.16" value="3" />
+          <entry key="project.open.time.16" value="4" />
           <entry key="project.open.time.17" value="3" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.19" value="2" />
@@ -172,162 +189,107 @@
           <entry key="project.open.time.26" value="1" />
           <entry key="project.open.time.3" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="28" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="category" value="2" />
-          <entry key="category_entity" value="13" />
+          <entry key="category_entity" value="25" />
           <entry key="categoryentity" value="14" />
           <entry key="hibernate_sequence" value="2" />
-          <entry key="java" value="173" />
-          <entry key="jsp" value="27" />
+          <entry key="java" value="192" />
+          <entry key="jsp" value="33" />
           <entry key="link" value="3" />
-          <entry key="link_entity" value="12" />
+          <entry key="link_entity" value="25" />
           <entry key="linkentity" value="22" />
-          <entry key="properties" value="19" />
+          <entry key="properties" value="20" />
           <entry key="sql" value="2" />
           <entry key="student" value="1" />
-          <entry key="xml" value="16" />
+          <entry key="xml" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="67" />
-          <entry key="JAVA" value="173" />
-          <entry key="JSP" value="27" />
-          <entry key="Properties" value="19" />
+          <entry key="Database Element" value="92" />
+          <entry key="JAVA" value="192" />
+          <entry key="JSP" value="33" />
+          <entry key="Properties" value="20" />
           <entry key="SQL" value="2" />
           <entry key="Scratch" value="2" />
-          <entry key="XML" value="16" />
+          <entry key="XML" value="17" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="52" />
-          <entry key="java" value="5374" />
-          <entry key="jsp" value="657" />
+          <entry key="java" value="5918" />
+          <entry key="jsp" value="834" />
           <entry key="properties" value="84" />
           <entry key="sql" value="15" />
           <entry key="txt" value="10" />
-          <entry key="xml" value="60" />
+          <entry key="xml" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="5374" />
-          <entry key="JSP" value="657" />
+          <entry key="JAVA" value="5918" />
+          <entry key="JSP" value="834" />
           <entry key="PLAIN_TEXT" value="62" />
           <entry key="Properties" value="84" />
           <entry key="Scratch" value="15" />
-          <entry key="XML" value="60" />
+          <entry key="XML" value="64" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.vcs.git.usages">
+        <counts>
+          <entry key="git.branch.create.new" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="1586550342">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="7" />
+          <entry key="jsp" value="2" />
+          <entry key="link_entity" value="1" />
+          <entry key="properties" value="1" />
+          <entry key="sql" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="Database Element" value="1" />
+          <entry key="JAVA" value="7" />
+          <entry key="JSP" value="2" />
+          <entry key="Properties" value="1" />
+          <entry key="Scratch" value="3" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="2" />
+          <entry key="sql" value="37" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2" />
+          <entry key="Scratch" value="37" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="38" column="27" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="65" selection-start-line="65" selection-end-line="65" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/Initializer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -339,6 +301,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -360,26 +327,27 @@
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/UserInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/repository/RoleRepository.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/repository/CategoryRepository.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/846c9a26-d4d0-419e-bc0a-c93a955956ac/console.sql" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/controller/MenuController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/repository/UserRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/service/CategoryService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/controller/CategoryController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/addMenu.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/config/RegisterGlobalAuthenticationregisterGlobalAuthentication.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/846c9a26-d4d0-419e-bc0a-c93a955956ac/console.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java" />
       </list>
     </option>
   </component>
@@ -500,25 +468,6 @@
               <item name="myLink" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="links" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="links" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -540,8 +489,9 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -549,12 +499,12 @@
     <property name="SearchEverywhereHistoryKey" value="Log4JMonitor&#9;ACTION&#9;ActivateLog4jMonitorToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541801877386" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541877709639" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -696,12 +646,16 @@
       <workItem from="1541537420527" duration="1759000" />
       <workItem from="1541539384726" duration="4199000" />
       <workItem from="1541569439382" duration="8308000" />
-      <workItem from="1541794980972" duration="1440000" />
+      <workItem from="1541794980972" duration="10774000" />
+      <workItem from="1541867240070" duration="6451000" />
+      <workItem from="1541887392104" duration="636000" />
+      <workItem from="1541888081867" duration="573000" />
+      <workItem from="1541890880848" duration="1634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="121648000" />
+    <option name="totallyTimeSpent" value="140276000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -714,7 +668,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -723,19 +676,19 @@
       <window_info id="Learn" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Designer" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.23471883" />
+      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.18826406" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32911393" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.3283859" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.22209436" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.22209436" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50061125" side_tool="true" weight="0.37629458" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32681242" />
-      <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.3283859" />
+      <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.32796317" />
       <window_info anchor="bottom" id="Database Changes" order="6" weight="0.3283859" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32681242" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49938875" visible="true" weight="0.25776756" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49938875" weight="0.3164557" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -744,7 +697,7 @@
       <window_info anchor="bottom" id="Log4jMonitor" order="16" weight="0.33026466" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
       <window_info anchor="right" id="Maven Projects" order="1" weight="0.15464547" />
-      <window_info anchor="right" id="Database" order="2" visible="true" weight="0.2121027" />
+      <window_info anchor="right" id="Database" order="2" visible="true" weight="0.20415647" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="CDI" order="5" />
@@ -753,44 +706,6 @@
       <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
     </layout>
-    <layout-to-restore>
-      <window_info id="UI Designer" order="0" />
-      <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info id="Capture Tool" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Learn" order="4" />
-      <window_info id="Web" order="5" side_tool="true" />
-      <window_info id="Designer" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.18639798" />
-      <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32911393" />
-      <window_info anchor="bottom" id="Spring" order="1" weight="0.3283859" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.22209436" />
-      <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50061125" side_tool="true" weight="0.37629458" />
-      <window_info anchor="bottom" id="Messages" order="4" weight="0.32796317" />
-      <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.3283859" />
-      <window_info anchor="bottom" id="Database Changes" order="6" weight="0.3283859" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Message" order="8" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.32681242" />
-      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49938875" visible="true" weight="0.37209302" />
-      <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
-      <window_info anchor="bottom" id="Application Servers" order="14" weight="0.32796317" />
-      <window_info anchor="bottom" id="TODO" order="15" weight="0.32796317" />
-      <window_info anchor="bottom" id="Log4jMonitor" order="16" weight="0.33026466" />
-      <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" weight="0.15464547" />
-      <window_info anchor="right" id="Database" order="2" weight="0.43828714" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="CDI" order="5" />
-      <window_info anchor="right" id="Palette" order="6" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="8" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.25" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -818,23 +733,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/846c9a26-d4d0-419e-bc0a-c93a955956ac/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="20" selection-start-column="20" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -848,13 +746,6 @@
     <entry file="das://846c9a26-d4d0-419e-bc0a-c93a955956ac/database/links/schema/myapp/table/categoryentity" />
     <entry file="das://846c9a26-d4d0-419e-bc0a-c93a955956ac/database/links/schema/myapp/table/linkentity" />
     <entry file="das://846c9a26-d4d0-419e-bc0a-c93a955956ac/database/links/schema/public/table/linkentity" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/CategoryService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/repository/CategoryRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -862,27 +753,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/WebSecurityConfig.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/CategoryController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret lean-forward="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addMenu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="42" selection-start-line="26" selection-start-column="42" selection-end-line="26" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -893,23 +767,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2295">
-          <caret line="165" column="30" selection-start-line="165" selection-start-column="30" selection-end-line="165" selection-end-column="30" />
-          <folding>
-            <marker date="1541075106769" expanded="true" signature="615:735" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -917,66 +774,70 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="37" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="38" column="27" selection-start-line="38" selection-start-column="20" selection-end-line="38" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/RegisterGlobalAuthenticationregisterGlobalAuthentication.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        <state relative-caret-position="342">
+          <caret line="40" column="24" selection-start-line="40" selection-start-column="24" selection-end-line="40" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/CategoryService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="20" selection-start-line="20" selection-end-line="20" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://846c9a26-d4d0-419e-bc0a-c93a955956ac/database/links/schema/myapp/table/category_entity">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
-          <filtering enabled="true" />
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="190">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="200" column="21" selection-start-line="200" selection-start-column="21" selection-end-line="200" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-100">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://846c9a26-d4d0-419e-bc0a-c93a955956ac/database/links/schema/myapp/table/category_entity" />
+    <entry file="das://846c9a26-d4d0-419e-bc0a-c93a955956ac/database/links/schema/myapp/table/link_entity" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/846c9a26-d4d0-419e-bc0a-c93a955956ac/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/f7d6dfdd-a992-4a29-a017-089026a5ce16/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -985,24 +846,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://846c9a26-d4d0-419e-bc0a-c93a955956ac/database/links/schema/myapp/table/link_entity">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/addMenu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/RegisterGlobalAuthenticationregisterGlobalAuthentication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/WebSecurityConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="28" column="4" selection-start-line="28" selection-start-column="4" selection-end-line="28" selection-end-column="4" />
+        <state relative-caret-position="104">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1011,7 +868,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/Initializer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
+        <state relative-caret-position="2">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1021,11 +878,53 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="65" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="-355">
+          <caret line="63" selection-start-line="63" selection-end-line="63" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" selection-start-line="6" selection-end-line="6" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/link_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="39" column="27" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1083,11 +982,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Web|myLink</last-edited>
+          <last-edited>myLink</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

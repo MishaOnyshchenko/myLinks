@@ -4,7 +4,7 @@
 <html>
 <head>
     <title>welcome</title>
-    <link href="[YOUR_FAVICON_PATH]/favicon.ico" rel="icon" type="image/x-icon" />
+    <%--<link href="[YOUR_FAVICON_PATH]/favicon.ico" rel="icon" type="image/x-icon" />--%>
 
 </head>
 <body>

@@ -23,7 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+
 public class LinkService {
 
     static final Logger log = LoggerFactory.getLogger(LinkController.class);
@@ -31,68 +31,83 @@ public class LinkService {
     @Autowired
     private LinkRepository linkRepository;
 
-    List<LinkEntity> linkEntityList = new ArrayList<>();
-    List<CategoryEntity> categoryEntityList = new ArrayList<>();
+//    List<LinkEntity> linkEntityList = new ArrayList<>();
+//    List<CategoryEntity> categoryEntityList = new ArrayList<>();
 
 
     public List<LinkEntity> allLinks() {
-        updateLinkEntityList();
-        log.info("***LinkList*** = " + linkEntityList.toString());
-        return linkEntityList;
+//        updateLinkEntityList();
+//        log.info("***LinkList*** = " + linkEntityList.toString());
+//        return linkEntityList;
+        log.info("***LinkList*** = " + linkRepository.linkList().toString());
+        return linkRepository.linkList();
     }
 
     public List<CategoryEntity> allCategories() {
-        updateCategoryEntityList();
-        log.info("***CategoryList*** = " + categoryEntityList.toString());
-        return categoryEntityList;
+//        updateCategoryEntityList();
+//        log.info("***CategoryList*** = " + categoryEntityList.toString());
+//        return categoryEntityList;
+        log.info("***CategoryList*** = " + linkRepository.categoryList().toString());
+        return linkRepository.categoryList();
     }
 
 
-    public void updateLinkEntityList() {
-        linkEntityList = linkRepository.linkList();
-    }
-    public void updateCategoryEntityList() {
-        categoryEntityList = linkRepository.categoryList();
-    }
+//    public List<LinkEntity> updateLinkEntityList() {
+//       return linkEntityList = linkRepository.linkList();
+//    }
+//    public void updateCategoryEntityList() {
+//        categoryEntityList = linkRepository.categoryList();
+//    }
 
 
-    public void addLink(LinkEntity linkEntity) {
+    public void addLink(LinkEntity linkEntity, String category) {
 
-        CategoryEntity categoryEntity = linkRepository.categoryList().get(0);
+//        CategoryEntity categoryEntity = linkRepository.categoryList().get(0);
+//        linkEntity.setCategoryEntity(categoryEntity);
+//        System.out.println("@@@@@@@@@@ category " + categoryEntity + "added to " + linkEntity);
+        System.out.println("IN ADDLINK");
+
+        CategoryEntity categoryEntity = new CategoryEntity();
+
+        for (CategoryEntity c: linkRepository.categoryList()) {
+            if(c.getName().equals(category)){
+                categoryEntity = c;
+            }
+        }
+        System.out.println("category from repository!!!!!!!!!!! +++++++++++ " + categoryEntity);
 
         linkEntity.setCategoryEntity(categoryEntity);
-        System.out.println("@@@@@@@@@@ category " + categoryEntity + "added to " + linkEntity);
 
         linkRepository.addLink(linkEntity);
         log.info("****** Link was sent to a repository: " + linkEntity);
-        updateLinkEntityList();
+
     }
 
     public void addCategory(CategoryEntity categoryEntity) {
         linkRepository.addCategory(categoryEntity);
         log.info("the folder was sent to a repository: " + categoryEntity);
-        updateCategoryEntityList();
+//        updateCategoryEntityList();
     }
 
 
     public void deleteLink(LinkEntity linkEntity) {
-        for (LinkEntity entity : linkEntityList) {
+        for (LinkEntity entity : linkRepository.linkList()) {
             if (entity.getName().equals(linkEntity.getName())) {
                 linkRepository.deleteLinkByName(entity);
 
                 log.info(entity + " has sent for deleting");
-                updateLinkEntityList();
+//                updateLinkEntityList();
             }
         }
     }
 
     public void deleteCategory(CategoryEntity categoryEntity) {
-        for (CategoryEntity entity: categoryEntityList) {
+        for (CategoryEntity entity: linkRepository.categoryList()) {
             if (entity.getName().equals(categoryEntity.getName())) {
                 linkRepository.deleteCategoryByName(entity);
 
                 log.info(entity + " has sent for deleting");
-                updateCategoryEntityList();
+//                updateCategoryEntityList();
             }
         }
     }

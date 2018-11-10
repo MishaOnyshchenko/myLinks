@@ -56,15 +56,17 @@ public class LinkRepository {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.saveOrUpdate(linkEntity);
         log.info("link added: " + linkEntity);
-//        currentSession.flush();
-//        currentSession.clear();
+        currentSession.flush();
+
     }
 
     public void addCategory(CategoryEntity categoryEntity) {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.saveOrUpdate(categoryEntity);
         log.info("link added: " + categoryEntity);
-//        currentSession.flush();
+        currentSession.flush();
+
+
     }
 
 

@@ -4,34 +4,53 @@
 <html>
 <head>
     <title>Add</title>
-    <link href="[YOUR_FAVICON_PATH]/favicon.ico" rel="icon" type="image/x-icon" />
+    <%--<link href="[YOUR_FAVICON_PATH]/favicon.ico" rel="icon" type="image/x-icon" />--%>
+
 </head>
 <body>
 
-<h1>${message}</h1>
+<div>
+    <h1>${message}</h1>
+</div>
 
-<ul>
-    <c:forEach items="${links}" var="link">
-        <li>${link}</li>
-    </c:forEach>
-</ul>
+<div>
+    <ul>
+        <c:forEach items="${links}" var="link">
+            <li>${link}</li>
+        </c:forEach>
+    </ul>
+</div>
+
+<div>
+    <form action="/show/add/link" method="GET" modelAttribute="linkEntity">
+
+        <input type="text" name="name" placeholder="link name">
+        <input type="text" name="url" placeholder="url">
+        <input type="text" name="description" placeholder="link description">
+
+        <h3>Choose category</h3>
+        <ul>
+        <c:forEach items="${categories}" var="category">
+        <li>
+            <input type="radio" name= "category" value= "${category.name}">
+            <label for = "${category.name}">${category.name}</label>
+        </li>
+        </c:forEach>
+        </ul>
+
+        <input type="submit" value="add link to chosen category">
+    </form>
+    <br/>
+
+    <form action="/show/del/link" method="GET" modelAttribute="linkEntity">
+        <input type="text" name="name" placeholder="delete link">
+        <input type=submit value="delete link">
+    </form>
+    <br/>
+    <br/>
+</div>
 
 
-<form action="/show/add/link" method="GET" modelAttribute="linkEntity">
-
-    <input type="text" name="name" placeholder="link name">
-    <input type="text" name="url" placeholder="url">
-    <input type="text" name="description" placeholder="link description">
-    <%--<input type="text" name="categoryEntity" placeholder="category name">--%>
-    <input type="submit" value="add">
-</form>
-<br/>
-<form action="/show/del/link" method="GET" modelAttribute="linkEntity">
-    <input type="text" name="name" placeholder="delete link">
-    <input type=submit value="delete link">
-</form>
-<br/>
-<br/>
 
 
 

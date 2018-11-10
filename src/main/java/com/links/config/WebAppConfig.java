@@ -24,6 +24,7 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
                 .setCachePeriod(Integer.valueOf("31556926"));
     }
 
+
     @Bean //указывает на то что это инициализация бина, и он будет создан с помощью DI.
     public InternalResourceViewResolver viewResolver() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();

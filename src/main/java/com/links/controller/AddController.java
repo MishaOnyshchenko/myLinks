@@ -22,11 +22,11 @@ public class AddController {
     @RequestMapping()
     public String showPage(Model model) {
         model.addAttribute("message", "Your bookmarks");
-        List<LinkEntity> links = linkService.getLinkEntityList();
+        List<LinkEntity> links = linkService.allLinks();
         model.addAttribute("links", links);
 
         model.addAttribute("message2", "Your bookmarks sorted by the next categories");
-        List<CategoryEntity> categories = linkService.getCategoryEntityList();
+        List<CategoryEntity> categories = linkService.allCategories();
         model.addAttribute("categories", categories);
 
         return "/add";
@@ -34,9 +34,10 @@ public class AddController {
 
 
     @RequestMapping(value = "/add/link")
-    public String addLink(@ModelAttribute LinkEntity linkEntity) {
+    public String addLink(@ModelAttribute LinkEntity linkEntity, @RequestParam ("category") String category) {
 
-        linkService.addLink(linkEntity);
+        System.out.println("********!!!!!!!!!!!!!Categoty received***********!!!!!!!!!!!!!!! " + category);
+        linkService.addLink(linkEntity, category);
         System.out.println("!!!SENT to SERVICE for SAVING!!!!!!!! " + linkEntity);
 
         return "redirect:/show";
