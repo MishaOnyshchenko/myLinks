@@ -2,35 +2,44 @@
 
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <title>welcome</title>
-    <%--<link href="[YOUR_FAVICON_PATH]/favicon.ico" rel="icon" type="image/x-icon" />--%>
+    <head>
+        <title>myLinks</title>
+    </head>
 
-</head>
-<body>
+    <body>
+        <div>
+            <h1>${message}</h1>
+        </div>
 
-<h1>${message}</h1>
+        <div>
+            <h3>Links</h3>
+            <ul>
+                <c:forEach items="${links}" var="link">
+                    <li><a href=${link.url} target="_blank">${link.name}</a></li>
+                </c:forEach>
+            </ul>
+        </div>
 
-<ul>
-    <c:forEach items="${links}" var="link">
-        <li><a href=${link.url} target="_blank">${link.name}</a></li>
-    </c:forEach>
-</ul>
+        <div>
+            <h3>Categories</h3>
+            <ul>
+                <c:forEach items="${categories}" var="category">
+                    <li><a href=${category.name} target="_blank">${category.name}</a></li>
+                </c:forEach>
+            </ul>
+        </div>
 
-<a href="/go">Go to the Links</a>
-<br>
-<br>
-<br>
+        <div>
+            <a href="/go"><h3>Go to the Links</h3></a>
+        </div>
+        <br>
 
-<ul>
-    <c:forEach items="${categories}" var="category">
-        <li><a href=${category.name} target="_blank">${category.name}</a></li>
-    </c:forEach>
-</ul>
+    </body>
 
 
-</body>
-<footer>
-    <a href="https://www.google.com.ua" target="_blank">Google</a>
-</footer>
+
+    <footer>
+        <a href="https://www.google.com.ua" target="_blank">Google</a>
+    </footer>
+
 </html>
