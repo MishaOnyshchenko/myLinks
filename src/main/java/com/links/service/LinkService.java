@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -69,8 +70,8 @@ public class LinkService {
 
         CategoryEntity categoryEntity = new CategoryEntity();
 
-        for (CategoryEntity c: linkRepository.categoryList()) {
-            if(c.getName().equals(category)){
+        for (CategoryEntity c : linkRepository.categoryList()) {
+            if (c.getName().equals(category)) {
                 categoryEntity = c;
             }
         }
@@ -90,6 +91,17 @@ public class LinkService {
     }
 
 
+    public List<LinkEntity> showLinksByCategory(String category) {
+        List<LinkEntity> linkEntityList = new LinkedList<>();
+        for (CategoryEntity c : linkRepository.categoryList()) {
+            if(c.getName().equals(category)){
+                linkEntityList = c.getLinkEntityList();
+            }
+        }
+        System.out.println("********List of the Links received from repository***********!!!!!!!!!!!!!!! " + linkEntityList);
+        return linkEntityList;
+    }
+
     public void deleteLink(LinkEntity linkEntity) {
         for (LinkEntity entity : linkRepository.linkList()) {
             if (entity.getName().equals(linkEntity.getName())) {
@@ -102,7 +114,7 @@ public class LinkService {
     }
 
     public void deleteCategory(CategoryEntity categoryEntity) {
-        for (CategoryEntity entity: linkRepository.categoryList()) {
+        for (CategoryEntity entity : linkRepository.categoryList()) {
             if (entity.getName().equals(categoryEntity.getName())) {
                 linkRepository.deleteCategoryByName(entity);
 

@@ -24,7 +24,7 @@
             <h3>Categories</h3>
             <ul>
                 <c:forEach items="${categories}" var="category">
-                    <li><a href=${category.name} target="_blank">${category.name}</a></li>
+                    <li>${category.name}</li>
                 </c:forEach>
             </ul>
         </div>

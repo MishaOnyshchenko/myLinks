@@ -25,6 +25,9 @@ public class CategoryEntity {
     @Column
     private String name;
 
+    @Column
+    private String description;
+
     @OneToMany(mappedBy = "categoryEntity", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JsonManagedReference
     private List<LinkEntity> linkEntityList;
