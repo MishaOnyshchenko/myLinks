@@ -34,39 +34,22 @@ public class LinkRepository {
     public List<CategoryEntity> categoryList() {
         Session currentSession = sessionFactory.getCurrentSession();
         Query<CategoryEntity> theQuery = currentSession.createQuery("from CategoryEntity", CategoryEntity.class);
+
         return theQuery.getResultList();
     }
-
-//    public CategoryEntity getCategoryByName(String name) {
-//        Session currentSession = sessionFactory.getCurrentSession();
-//        CategoryEntity categoryEntity = (CategoryEntity)currentSession.createQuery("FROM CategoryEntity ce WHERE ce.name =:name").setParameter("name", name).uniqueResult();
-//        return categoryEntity;
-//    }
-    //    public LinkEntity LinkByName(String name) {
-//        Session currentSession = sessionFactory.getCurrentSession();
-//        LinkEntity link = (LinkEntity) currentSession.createQuery("FROM LinkEntity le  WHERE le.name =:name")
-//                .setParameter("name", name)
-//                .uniqueResult();
-//        return link;
-//    }
-
 
 
     public void addLink(LinkEntity linkEntity) {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.saveOrUpdate(linkEntity);
-        log.info("link added: " + linkEntity);
-        currentSession.flush();
-
+        log.info("Link added to repository: " + linkEntity);
     }
+
 
     public void addCategory(CategoryEntity categoryEntity) {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.saveOrUpdate(categoryEntity);
-        log.info("link added: " + categoryEntity);
-        currentSession.flush();
-
-
+        log.info("Category added to repository: " + categoryEntity);
     }
 
 
@@ -74,40 +57,16 @@ public class LinkRepository {
         Session currentSession = sessionFactory.getCurrentSession();
         if(linkEntity != null){
             currentSession.delete(linkEntity);
-            log.info(linkEntity + " deleted");
+            log.info("Link deleted from repository: " + linkEntity);
         }
-//        currentSession.flush();
-//        currentSession.clear();
     }
+
 
     public void deleteCategoryByName(CategoryEntity categoryEntity){
         Session currentSession = sessionFactory.getCurrentSession();
         if(categoryEntity != null){
             currentSession.delete(categoryEntity);
-            log.info(categoryEntity + " deleted");
+            log.info("Category deleted from repository: " + categoryEntity);
         }
-//        currentSession.flush();
-//        currentSession.clear();
-
     }
-
-
-
-
-
-//    public String deleteAll() {
-//        Session currentSession = sessionFactory.getCurrentSession();
-//        currentSession.delete();
-//        return "all deleted";
-//    }
-
-//    public LinkEntity LinkByName(String name) {
-//        Session currentSession = sessionFactory.getCurrentSession();
-//        LinkEntity link = (LinkEntity) currentSession.createQuery("FROM LinkEntity le  WHERE le.name =:name")
-//                .setParameter("name", name)
-//                .uniqueResult();
-//        return link;
-//    }
-
-
 }

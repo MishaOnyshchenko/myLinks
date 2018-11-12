@@ -1,21 +1,14 @@
 package com.links.dao.entity;
 
 import com.fasterxml.jackson.annotation.JsonManagedReference;
-import lombok.*;
+import lombok.Data;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @Data
-@AllArgsConstructor
-@NoArgsConstructor
-@Getter
-@Setter
-@Builder
 @Entity(name="CategoryEntity")
 @Table(name="category_entity")
-//@Table(name="category_entity", schema = "myapp")
 public class CategoryEntity {
 
     @Id

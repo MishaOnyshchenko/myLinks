@@ -1,6 +1,5 @@
 package com.links.config;
 
-
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -39,7 +38,6 @@ public class HibernateConfig {
     @Value("${hibernate.dialect}")
     private String dialect;
 
-
     @Value("${spring.datasource.initialization-mode}")
     private String initDataSQl;
     @Value("${spring.jpa.properties.hibernate.enable_lazy_load_no_trans}")
@@ -61,22 +59,8 @@ public class HibernateConfig {
         sessionFactoryBean.setDataSource(dataSource());
         sessionFactoryBean.setPackagesToScan(scanPackage);
         sessionFactoryBean.setHibernateProperties(hibernateProperties());
-
-
         return sessionFactoryBean;
     }
-
-//    @Bean
-//    public LocalContainerEntityManagerFactoryBean entityManagerFactory() {
-//        LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
-//        entityManagerFactoryBean.setDataSource(dataSource());
-//        entityManagerFactoryBean.setPackagesToScan(scanPackage);
-//        entityManagerFactoryBean.setPersistenceProviderClass(HibernatePersistence.class);
-//        entityManagerFactoryBean.setJpaProperties(hibernateProperties());
-//
-//        return entityManagerFactoryBean;
-//    }
-
 
     @Bean
     @Autowired
@@ -85,14 +69,6 @@ public class HibernateConfig {
         transactionManager.setSessionFactory(sessionFactory);
         return transactionManager;
     }
-    //    @Bean
-//    public JpaTransactionManager transactionManager() {
-//        JpaTransactionManager transactionManager = new JpaTransactionManager();
-//        transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
-//
-//        return transactionManager;
-//    }
-
 
     private Properties hibernateProperties() {
         Properties properties = new Properties();
@@ -100,11 +76,6 @@ public class HibernateConfig {
         properties.put("hibernate.hbm2ddl.auto", ddlAuto);
         properties.put("spring.datasource.initialization-mode", initDataSQl);
         properties.put("spring.jpa.properties.hibernate.enable_lazy_load_no_trans", lazyLoad);
-
         return properties;
     }
-
-
-
-
 }

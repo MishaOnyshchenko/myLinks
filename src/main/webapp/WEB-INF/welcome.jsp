@@ -39,7 +39,6 @@
     </body>
 
 
-
     <footer>
         <a href="https://www.google.com.ua" target="_blank">Google</a>
     </footer>

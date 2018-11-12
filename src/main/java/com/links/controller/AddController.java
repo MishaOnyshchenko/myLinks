@@ -1,20 +1,24 @@
 package com.links.controller;
 
-
 import com.links.dao.entity.CategoryEntity;
 import com.links.dao.entity.LinkEntity;
 import com.links.service.LinkService;
-import com.sun.org.apache.xpath.internal.operations.Mod;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.List;
 
 @Controller
 @RequestMapping("/show")
 public class AddController {
+
+    static final Logger log = LoggerFactory.getLogger(LinkController.class);
 
     @Autowired
     private LinkService linkService;
@@ -23,10 +27,10 @@ public class AddController {
     @RequestMapping()
     public String showPage(Model model) {
         model.addAttribute("message", "Your bookmarks");
+
         List<LinkEntity> links = linkService.allLinks();
         model.addAttribute("links", links);
 
-        model.addAttribute("message2", "Your bookmarks sorted by the next categories");
         List<CategoryEntity> categories = linkService.allCategories();
         model.addAttribute("categories", categories);
 
@@ -36,46 +40,28 @@ public class AddController {
 
     @RequestMapping(value = "/add/link")
     public String addLink(@ModelAttribute LinkEntity linkEntity, @RequestParam ("category") String category) {
+        log.info("Category received from client for saving new link and will be sent to service: " + category);
 
-        System.out.println("********!!!!!!!!!!!!!Category received***********!!!!!!!!!!!!!!! " + category);
+        System.out.println();
         linkService.addLink(linkEntity, category);
-        System.out.println("!!!SENT to SERVICE for SAVING!!!!!!!! " + linkEntity);
+        log.info("LinkEntity was sent to service from controller: " + linkEntity);
 
         return "redirect:/show";
     }
 
+
     @RequestMapping(value = "/category/links")
     public String getLinksByCategory(@RequestParam ("category") String category, Model model) {
-        System.out.println("********Links by Category received***********!!!!!!!!!!!!!!! " + category);
+        log.info("Client asked to show all links by category: " + category);
+
         List<LinkEntity> linksFromChosenCategory = linkService.showLinksByCategory(category);
-        System.out.println("********List of the Links received from service***********!!!!!!!!!!!!!!! " + linksFromChosenCategory);
+        log.info("Next links from chosen category received from service: " + linksFromChosenCategory);
 
         model.addAttribute("message3", "Your links in category " + category);
         model.addAttribute("linksFromChosenCategory", linksFromChosenCategory);
 
         return "/category";
-//        return "redirect:/show";
     }
-
-
-
-//    @RequestMapping(value = "/category/links")
-//    public String getLinksByCategory(Model model) {
-//        model.addAttribute("message3", "!!!! Bookmarks by the category ");
-//        return "/add";
-//    }
-
-//    @RequestMapping(value = "/category/links/show")
-//    public String showLinksByCategory(Model model) {
-//        System.out.println("********Links by Category received***********!!!!!!!!!!!!!!! " + category);
-//        List<LinkEntity> linksFromChosenCategory = linkService.showLinksByCategory(category);
-//        System.out.println("********List of the Links received from service***********!!!!!!!!!!!!!!! " + linksFromChosenCategory);
-//
-//        model.addAttribute("linksFromChosenCategory", linksFromChosenCategory);
-//
-//        return "redirect:/show";
-//    }
-
 
 
     @RequestMapping(value = "/add/category")
@@ -91,10 +77,10 @@ public class AddController {
         return "redirect:/show";
     }
 
+
     @RequestMapping(value = "/del/category")
     public String deleteCategory(@ModelAttribute CategoryEntity categoryEntity) {
         linkService.deleteCategory(categoryEntity);
         return "redirect:/show";
     }
-
 }
