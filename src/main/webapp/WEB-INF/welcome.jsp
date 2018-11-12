@@ -15,7 +15,9 @@
             <h3>Links</h3>
             <ul>
                 <c:forEach items="${links}" var="link">
-                    <li><a href=${link.url} target="_blank">${link.name}</a></li>
+                    <li>
+                        <a href=${link.url} title="${link.description}" target="_blank">${link.name}</a>
+                    </li>
                 </c:forEach>
             </ul>
         </div>

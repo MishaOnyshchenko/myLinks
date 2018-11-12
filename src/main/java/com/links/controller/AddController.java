@@ -50,11 +50,10 @@ public class AddController {
         List<LinkEntity> linksFromChosenCategory = linkService.showLinksByCategory(category);
         System.out.println("********List of the Links received from service***********!!!!!!!!!!!!!!! " + linksFromChosenCategory);
 
-        model.addAttribute("message3", "Bookmarks by the category " + category);
+        model.addAttribute("message3", "Your links in category " + category);
         model.addAttribute("linksFromChosenCategory", linksFromChosenCategory);
 
-
-        return "/add";
+        return "/category";
 //        return "redirect:/show";
     }
 
