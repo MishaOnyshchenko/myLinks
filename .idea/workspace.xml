@@ -11,35 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b4a9df03-11be-4dfb-8b9b-6b8357eba110" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/META-INF/MANIFEST.MF" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/config/WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/controller/CategoryController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/UserInfo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/repository/CategoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/repository/RoleRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/service/CategoryService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/logback-test.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/links/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/config/HibernateConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/links/config/WebAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/config/WebAppConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/links/controller/AddController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/controller/AddController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/links/controller/LinkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/controller/LinkController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/links/dao/entity/LinkEntity$LinkEntityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/links/dao/entity/LinkEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/dao/entity/LinkEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/links/service/LinkService.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -183,7 +154,7 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="category_entity" value="2" />
-          <entry key="java" value="43" />
+          <entry key="java" value="44" />
           <entry key="jsp" value="18" />
           <entry key="link_entity" value="2" />
           <entry key="properties" value="4" />
@@ -194,7 +165,7 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Database Element" value="4" />
-          <entry key="JAVA" value="43" />
+          <entry key="JAVA" value="44" />
           <entry key="JSP" value="18" />
           <entry key="Properties" value="4" />
           <entry key="Scratch" value="3" />
@@ -225,7 +196,20 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="969">
+              <caret line="57" column="72" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -464,7 +448,7 @@
     <property name="SearchEverywhereHistoryKey" value="Log4JMonitor&#9;ACTION&#9;ActivateLog4jMonitorToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542065971366" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542066428717" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -622,7 +606,7 @@
       <workItem from="1541953946183" duration="1061000" />
       <workItem from="1542024989451" duration="15003000" />
       <workItem from="1542051147117" duration="8051000" />
-      <workItem from="1542061330590" duration="4607000" />
+      <workItem from="1542061330590" duration="4950000" />
     </task>
     <task id="LOCAL-00001" summary="welcome updated">
       <created>1541894644236</created>
@@ -635,7 +619,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178983000" />
+    <option name="totallyTimeSpent" value="179326000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -660,7 +644,7 @@
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.32911393" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32796317" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.22209436" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.22209436" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50061125" side_tool="true" weight="0.32796317" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.32681242" />
       <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.32796317" />
@@ -668,7 +652,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32911393" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32681242" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.49816626" visible="true" weight="0.3164557" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49816626" weight="0.3164557" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -876,16 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="70">
-          <caret line="57" column="72" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="87">
@@ -963,6 +937,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2533">
           <caret line="149" column="8" selection-start-line="149" selection-start-column="8" selection-end-line="149" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="969">
+          <caret line="57" column="72" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
