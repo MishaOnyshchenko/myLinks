@@ -1,4 +1,5 @@
 package com.links.config;
+
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -14,16 +15,13 @@ import org.springframework.web.servlet.view.JstlView;
 @EnableWebMvc //эта аннотация разрешает нашему проекту использовать MVC;
 @ComponentScan({"com.links"}) //говорит, где искать компоненты проекта.
 @PropertySource({"classpath:application.properties"})
-//@PropertySource({"classpath:validation.properties", "classpath:application.properties"})
 public class WebAppConfig extends WebMvcConfigurerAdapter {
-
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry.addResourceHandler("/resources/**").addResourceLocations("/resources/")
                 .setCachePeriod(Integer.valueOf("31556926"));
     }
-
 
     @Bean //указывает на то что это инициализация бина, и он будет создан с помощью DI.
     public InternalResourceViewResolver viewResolver() {

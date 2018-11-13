@@ -8,14 +8,8 @@ import javax.persistence.*;
 
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Setter
-@Getter
-@Builder
 @Entity(name = "LinkEntity")
 @Table(name="link_entity")
-//@Table(name="link_entity", schema = "myapp")
 public class LinkEntity {
 
     @Id

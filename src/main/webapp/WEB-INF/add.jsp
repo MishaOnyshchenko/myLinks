@@ -74,7 +74,7 @@
         </form>
     </div>
 
-    <%--<h2>${message2}</h2>--%>
+
     <div>
         <form action="/show/category/links" method="GET">
             <h1>${message3}</h1>
