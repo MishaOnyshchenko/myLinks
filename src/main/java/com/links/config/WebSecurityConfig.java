@@ -1,4 +1,4 @@
-package com.bookmark.service.appConfig;
+package com.links.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -15,6 +15,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+
     @Autowired
     @Qualifier("userDetailServiceImpl")
     private UserDetailsService userDetailsService;
@@ -41,6 +42,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and().csrf().disable()
 
                 .cors().disable()
+
                 .formLogin().loginPage("/login").permitAll()
                 .defaultSuccessUrl("/private/home")
                 .and()

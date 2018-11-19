@@ -1,9 +1,8 @@
-package com.bookmark.service.validator;
+package com.links.validator;
 
 
-
-import com.bookmark.service.dao.model.UserInfo;
-import com.bookmark.service.service.UserService;
+import com.links.dao.entity.UserInfo;
+import com.links.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Component;

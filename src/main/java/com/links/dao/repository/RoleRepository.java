@@ -1,7 +1,7 @@
-package com.bookmark.service.dao.repository;
+package com.links.dao.repository;
 
 
-import com.bookmark.service.dao.model.Role;
+import com.links.dao.entity.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RoleRepository extends JpaRepository<Role, Long> {

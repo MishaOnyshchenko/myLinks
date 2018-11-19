@@ -1,10 +1,10 @@
-package com.bookmark.service.service;
+package com.links.service;
 
 
-import com.bookmark.service.dao.model.UserInfo;
-import org.springframework.transaction.annotation.Transactional;
+import com.links.dao.entity.UserInfo;
 
 public interface UserService {
+
     void save(UserInfo userInfo);
 
 

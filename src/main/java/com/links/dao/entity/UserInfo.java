@@ -1,16 +1,15 @@
-package com.bookmark.service.dao.model;
+package com.links.dao.entity;
 
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
-import lombok.ToString;
 
 import javax.persistence.*;
 import java.util.Set;
 
 /**
  * Объект юзер инфо который связан с объектом роли как многие ко многим и при генерации таблиц
- * создадут 3-ю таблицу которая и будет связывать ети 2 сущности по ID
+ * создадут 3-ю таблицу которая и будет связывать эти 2 сущности по ID
  */
 @Getter
 @Setter
@@ -18,16 +17,21 @@ import java.util.Set;
 @Entity
 @Table(name = "user_info")
 public class UserInfo {
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
+
     private String username;
+
     private String password;
+
     transient private String passwordConfirm;
+
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "userInfo")
 //    @JoinColumn(name = "user_info_id")
-    private Set<MenuTittle> menuTittleSet;
+    private Set<CategoryEntity> menuTittleSet;
 
     @ManyToMany
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))

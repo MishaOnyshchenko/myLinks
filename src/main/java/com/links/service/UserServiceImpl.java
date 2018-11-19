@@ -1,13 +1,13 @@
-package com.bookmark.service.service.impl;
+package com.links.service;
 
 
 
 
-import com.bookmark.service.dao.model.Role;
-import com.bookmark.service.dao.model.UserInfo;
-import com.bookmark.service.dao.repository.RoleRepository;
-import com.bookmark.service.dao.repository.UserRepository;
-import com.bookmark.service.service.UserService;
+import com.links.dao.entity.Role;
+import com.links.dao.entity.UserInfo;
+import com.links.dao.repository.RoleRepository;
+import com.links.dao.repository.UserRepository;
+import com.links.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
