@@ -13,7 +13,7 @@ public class CategoryEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int id;
+    private Long id;
 
     @Column
     private String name;
@@ -24,6 +24,9 @@ public class CategoryEntity {
     @OneToMany(mappedBy = "categoryEntity", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JsonManagedReference
     private List<LinkEntity> linkEntityList;
+
+    @ManyToOne
+    private UserInfo userInfo;
 
     @Override
     public String toString() {

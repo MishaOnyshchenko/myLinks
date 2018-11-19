@@ -1,9 +1,9 @@
-package com.bookmark.service.service.impl;
+package com.links.service;
 
 
-import com.bookmark.service.dao.model.Role;
-import com.bookmark.service.dao.model.UserInfo;
-import com.bookmark.service.dao.repository.UserRepository;
+import com.links.dao.entity.Role;
+import com.links.dao.entity.UserInfo;
+import com.links.dao.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
@@ -18,6 +18,7 @@ import java.util.Set;
 
 @Service(value ="userDetailServiceImpl")
 public class UserDetailsServiceImpl implements UserDetailsService {
+
     @Autowired
     private UserRepository userRepository;
 
@@ -31,7 +32,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         for (Role role : userInfo.getRoles()) {
             grantedAuthorities.add(new SimpleGrantedAuthority(role.getName()));
         }
-        System.out.println(" set to grantedAuthoritie roles from user info : {}"+ grantedAuthorities);
+        System.out.println(" set to grantedAuthority roles from user info : {}"+ grantedAuthorities);
         return new org.springframework.security.core.userdetails.User(userInfo.getUsername(), userInfo.getPassword(), grantedAuthorities);
     }
 }

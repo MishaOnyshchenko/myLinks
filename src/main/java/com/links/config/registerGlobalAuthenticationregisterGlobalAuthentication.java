@@ -1,4 +1,4 @@
-package com.bookmark.service.appConfig;
+package com.links.config;
 
 import org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer;
 

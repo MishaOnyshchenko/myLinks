@@ -1,6 +1,7 @@
-package com.bookmark.service.service;
+package com.links.service;
 
 public interface SecurityService {
+
     String findLoggedInUsername();
 
     void autologin(String username, String password);

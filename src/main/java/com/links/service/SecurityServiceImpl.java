@@ -1,6 +1,6 @@
-package com.bookmark.service.service.impl;
+package com.links.service;
 
-import com.bookmark.service.service.SecurityService;
+import com.links.service.SecurityService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,8 +14,10 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class SecurityServiceImpl implements SecurityService {
+
     @Autowired
     private AuthenticationManager authenticationManager;
+
     @Autowired
     @Qualifier("userDetailServiceImpl")
     private UserDetailsService userDetailsService;

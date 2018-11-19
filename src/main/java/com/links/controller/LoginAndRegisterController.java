@@ -1,11 +1,13 @@
-package com.bookmark.service.web;
+package com.links.controller;
 
 
 
-import com.bookmark.service.dao.model.UserInfo;
-import com.bookmark.service.service.SecurityService;
-import com.bookmark.service.service.UserService;
-import com.bookmark.service.validator.UserValidator;
+import com.links.dao.entity.UserInfo;
+import com.links.service.SecurityService;
+import com.links.service.UserService;
+import com.links.validator.UserValidator;
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class LoginAndRegisterController {
+
     @Autowired
     private UserService userService;
     @Autowired

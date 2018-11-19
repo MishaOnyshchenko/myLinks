@@ -14,7 +14,7 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration //собственно эта аннотация и говорит о том, что данный класс является Java
 @EnableWebMvc //эта аннотация разрешает нашему проекту использовать MVC;
 @ComponentScan({"com.links"}) //говорит, где искать компоненты проекта.
-@PropertySource({"classpath:application.properties"})
+@PropertySource({"classpath:validation.properties", "classpath:application.properties"})
 public class WebAppConfig extends WebMvcConfigurerAdapter {
 
     @Override
