@@ -1,4 +1,8 @@
 com\links\service\UserService.class
+com\links\service\SecurityService.class
+com\links\service\LinkService.class
+com\links\controller\LoginAndRegisterController.class
+com\links\dao\repository\RoleRepository.class
 com\links\config\WebSecurityConfig.class
 com\links\dao\entity\UserInfo.class
 com\links\dao\repository\UserRepository.class
@@ -6,15 +10,13 @@ com\links\dao\entity\CategoryEntity.class
 com\links\config\Initializer.class
 com\links\controller\LinkController.class
 com\links\config\registerGlobalAuthenticationregisterGlobalAuthentication.class
-com\links\service\SecurityService.class
 com\links\dao\entity\LinkEntity.class
-com\links\service\LinkService.class
 com\links\service\UserServiceImpl.class
 com\links\service\SecurityServiceImpl.class
-com\links\dao\repository\RoleRepository.class
 com\links\config\HibernateConfig.class
 com\links\dao\entity\Role.class
 com\links\dao\repository\LinkRepository.class
 com\links\service\UserDetailsServiceImpl.class
 com\links\config\WebAppConfig.class
+com\links\validator\UserValidator.class
 com\links\controller\AddController.class
