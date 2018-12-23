@@ -28,7 +28,7 @@ public class LinkController {
         List<CategoryEntity> categories = linkService.allCategories();
         model.addAttribute("categories", categories);
 
-        return "view/welcome";
+        return "welcome";
     }
 
 
