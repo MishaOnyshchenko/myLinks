@@ -10,7 +10,44 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="09bad567-d3c9-457b-85d5-7252693aa86e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/classes/com/links/config/HibernateConfig.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/links/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/data.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/HibernateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/Initializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/WebAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/WebAppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/WebSecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/config/WebSecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/controller/LinkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/controller/LinkController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/controller/LoginAndRegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/controller/LoginAndRegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/dao/entity/Role.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/dao/entity/Role.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/service/SecurityServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/service/SecurityServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/service/UserDetailsServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/service/UserDetailsServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/validator/UserValidator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/myLink_war_exploded/WEB-INF/classes/com/links/validator/UserValidator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/config/InitDataToDb.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/config/Initializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/config/Initializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/controller/LoginAndRegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/controller/LoginAndRegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/service/SecurityServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/service/SecurityServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/links/service/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/links/service/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/validation.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/validation.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/links/config/HibernateConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/config/HibernateConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/links/config/Initializer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/config/Initializer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/links/config/WebAppConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/config/WebAppConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/links/controller/LinkController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/links/controller/LinkController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/myLink-1.0-SNAPSHOT.war" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,25 +71,33 @@
     <expand>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="links: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
       </path>
       <path>
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
         <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="links: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="6d9b600a:PostgresImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="a16502c0:PostgresImplModel$Schema" />
       </path>
     </expand>
     <select />
@@ -209,25 +254,124 @@
     <session id="1436242905">
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="properties" value="1" />
-          <entry key="sql" value="1" />
+          <entry key="category_entity" value="2" />
+          <entry key="java" value="75" />
+          <entry key="jsp" value="12" />
+          <entry key="link_entity" value="2" />
+          <entry key="properties" value="15" />
+          <entry key="role" value="4" />
+          <entry key="sql" value="11" />
+          <entry key="user_info" value="1" />
+          <entry key="user_role" value="1" />
+          <entry key="xml" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Properties" value="1" />
-          <entry key="Scratch" value="1" />
+          <entry key="Database Element" value="10" />
+          <entry key="JAVA" value="75" />
+          <entry key="JSP" value="12" />
+          <entry key="Properties" value="15" />
+          <entry key="SQL" value="6" />
+          <entry key="Scratch" value="5" />
+          <entry key="XML" value="8" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="96" />
+          <entry key="properties" value="89" />
+          <entry key="sql" value="16" />
+          <entry key="txt" value="13" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="96" />
+          <entry key="PLAIN_TEXT" value="13" />
+          <entry key="Properties" value="89" />
+          <entry key="SQL" value="16" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+            <state relative-caret-position="119">
+              <caret line="48" column="45" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1449#1450#0" expanded="true" />
+                <element signature="e#1511#1512#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bef98bd1-8821-4fb0-986d-7b8f670a2ea0/console.sql">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="31" lean-forward="true" selection-end-line="1" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/validation.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="58" lean-forward="true" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/validator/UserValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="363">
+              <caret line="41" column="64" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="64" />
+              <folding>
+                <element signature="e#656#657#0" expanded="true" />
+                <element signature="e#708#709#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="490">
+              <caret line="43" selection-end-line="43" />
+              <folding>
+                <element signature="e#0#1459#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -262,7 +406,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/webapp/WEB-INF/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/q.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/config/Initializer.java" />
         <option value="$PROJECT_DIR$/src/webapp/WEB-INF/add.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/entity/Student.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/entity/Link.java" />
@@ -279,35 +422,39 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/846c9a26-d4d0-419e-bc0a-c93a955956ac/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/console.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/category.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/repository/RoleRepository.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/UserInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/service/SecurityServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/service/SecurityService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/service/UserDetailsServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/service/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/config/registerGlobalAuthenticationregisterGlobalAuthentication.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/validation.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/config/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/validator/UserValidator.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/controller/LoginAndRegisterController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/controller/UserController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/controller/MenuController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/config/InitDataToDb.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/controller/LoginAndRegisterController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/service/UserDetailsServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/service/SecurityServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/data.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/config/WebSecurityConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/config/Initializer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/validation.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/links/validator/UserValidator.java" />
       </list>
     </option>
   </component>
@@ -333,17 +480,12 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="myLink" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-      </expand>
+      <expand />
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="833" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
   </component>
@@ -359,121 +501,6 @@
             <path>
               <item name="myLink" type="58d84e3e:PackageViewProjectNode" />
               <item name="myLink" type="616d4139:PackageViewModuleNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="links" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="links" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="links" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="links" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="links" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="entity" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="links" type="462c0819:PsiDirectoryNode" />
-              <item name="dao" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="links" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
-              <item name="myLink" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -599,6 +626,128 @@
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="links" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="links" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="links" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="links" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="links" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="links" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="links" type="462c0819:PsiDirectoryNode" />
+              <item name="validator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myLink" type="b2602c69:ProjectViewProjectNode" />
+              <item name="myLink" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -606,9 +755,9 @@
     <property name="SearchEverywhereHistoryKey" value="Log4JMonitor&#9;ACTION&#9;ActivateLog4jMonitorToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542719878507" />
-    <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ivanovBookmark/BookmarkService_SpringSecurity_PostgreSQL" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545606482636" />
+    <property name="database.console.LAST_STATE" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../0_trash/springSecurity/base" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Problems" />
@@ -617,24 +766,24 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\0_java\0_projects\bookmark\myLink\src\main\webapp\WEB-INF" />
-      <recent name="F:\0_java\0_projects\bookmark\myLink\src\main\webapp" />
-      <recent name="F:\0_java\0_projects\bookmark\myLink\src\main\resources" />
-      <recent name="E:\0_java\0_projects\bookmark\myLink\src\main\webapp\WEB-INF" />
-      <recent name="E:\0_java\0_projects\bookmark\myLink\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.links.config" />
-      <recent name="com.links.controller" />
-      <recent name="validator" />
-      <recent name="com.links.dao.repository" />
-      <recent name="com.links.service" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="F:\0_java\0_projects\bookmark\myLink\src\main\webapp\WEB-INF" />
       <recent name="F:\0_java\0_projects\bookmark\myLink\src\main\webapp\WEB-INF\view" />
       <recent name="E:\0_java\0_projects\bookmark\myLink\src\main" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.links.controller" />
+      <recent name="com.links.config" />
+      <recent name="validator" />
+      <recent name="com.links.dao.repository" />
+      <recent name="com.links.service" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\0_java\0_projects\bookmark\myLink\src\main\resources" />
+      <recent name="F:\0_java\0_projects\bookmark\myLink\src\main\webapp\WEB-INF" />
+      <recent name="F:\0_java\0_projects\bookmark\myLink\src\main\webapp" />
+      <recent name="F:\0_java\0_projects\bookmark\myLink\src\main\resources" />
+      <recent name="E:\0_java\0_projects\bookmark\myLink\src\main\webapp\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -790,7 +939,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="200075000" />
+    <option name="totallyTimeSpent" value="207386000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -812,9 +961,9 @@
       <window_info id="Learn" order="4" />
       <window_info id="Web" order="5" side_tool="true" />
       <window_info id="Designer" order="6" />
-      <window_info content_ui="combo" id="Project" order="7" visible="true" weight="0.21271394" />
+      <window_info active="true" content_ui="combo" id="Project" order="7" visible="true" weight="0.1601467" />
       <window_info id="Structure" order="8" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Database Console" order="0" weight="0.32911393" />
+      <window_info anchor="bottom" id="Database Console" order="0" visible="true" weight="0.3314154" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32796317" />
       <window_info anchor="bottom" id="Terminal" order="2" weight="0.22209436" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50061125" side_tool="true" weight="0.32796317" />
@@ -824,7 +973,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32911393" />
       <window_info anchor="bottom" id="Message" order="8" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.32681242" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" sideWeight="0.49816626" visible="true" weight="0.35788262" />
+      <window_info anchor="bottom" id="Run" order="10" sideWeight="0.49816626" weight="0.3647871" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -832,8 +981,8 @@
       <window_info anchor="bottom" id="TODO" order="15" weight="0.33139536" />
       <window_info anchor="bottom" id="Log4jMonitor" order="16" weight="0.33026466" />
       <window_info anchor="right" id="Capture Analysis" order="0" />
-      <window_info anchor="right" id="Maven Projects" order="1" weight="0.31863979" />
-      <window_info anchor="right" id="Database" order="2" weight="0.16259168" />
+      <window_info anchor="right" id="Maven Projects" order="1" weight="0.31845966" />
+      <window_info anchor="right" id="Database" order="2" visible="true" weight="0.34718826" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="right" id="Theme Preview" order="4" />
       <window_info anchor="right" id="CDI" order="5" />
@@ -918,115 +1067,206 @@
     <option name="LAST_COMMIT_MESSAGE" value="welcome updated" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/link_entity" />
-    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/category_entity" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/CategoryService.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/repository/CategoryRepository.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/category.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="13" column="79" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/logback-test.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="38" column="11" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/category_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="211" column="21" selection-start-line="211" selection-start-column="21" selection-end-line="211" selection-end-column="21" />
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/category_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/category_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.0.RELEASE/spring-security-core-5.0.0.RELEASE-sources.jar!/org/springframework/security/core/userdetails/UserDetailsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/link_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="51" lean-forward="true" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/link_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/registration.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-495" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12616" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/Initializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/category_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java">
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/link_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/InitDataToDb.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="69" column="60" lean-forward="true" selection-start-line="69" selection-start-column="60" selection-end-line="69" selection-end-column="60" />
+        <state>
+          <caret selection-end-line="56" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#1851#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/repository/LinkRepository.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-361">
+          <caret line="28" column="68" selection-start-line="28" selection-start-column="68" selection-end-line="28" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/SecurityService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="30" column="21" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/add.jsp">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <caret line="55" column="19" selection-start-line="55" selection-start-column="19" selection-end-line="55" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/category.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="79" selection-start-line="13" selection-start-column="79" selection-end-line="13" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/registration.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-18">
+          <caret line="32" column="80" selection-start-line="32" selection-start-column="68" selection-end-line="32" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/repository/RoleRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="28" />
+        <state relative-caret-position="85">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/validation.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/validator/UserValidator.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/repository/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="119">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/UserController.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/LinkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/UserInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="39" selection-start-line="39" selection-end-line="47" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/welcome.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/AddController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-51">
+          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/LinkController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -1034,11 +1274,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/MenuController.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/LoginAndRegisterController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="31" column="30" lean-forward="true" selection-start-line="31" selection-start-column="30" selection-end-line="31" selection-end-column="30" />
+        <state relative-caret-position="471">
+          <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/Initializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="15" column="84" selection-start-line="15" selection-start-column="84" selection-end-line="15" selection-end-column="84" />
         </state>
       </provider>
     </entry>
@@ -1051,118 +1300,148 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/WebAppConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        <state relative-caret-position="459">
+          <caret line="39" column="50" selection-start-line="39" selection-start-column="50" selection-end-line="39" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/WebSecurityConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/SecurityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-core/5.0.0.RELEASE/spring-security-core-5.0.0.RELEASE-sources.jar!/org/springframework/security/authentication/AuthenticationManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="17" selection-start-line="26" selection-start-column="17" selection-end-line="26" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/repository/UserRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/UserInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        <state relative-caret-position="185">
+          <caret line="40" column="40" selection-start-line="40" selection-start-column="40" selection-end-line="40" selection-end-column="40" />
+          <folding>
+            <element signature="e#1148#1149#0" expanded="true" />
+            <element signature="e#1198#1199#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/SecurityServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="38" column="71" selection-start-line="38" selection-start-column="71" selection-end-line="38" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/UserDetailsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/LinkEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+        <state relative-caret-position="-68">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/dao/entity/CategoryEntity.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/UserDetailsServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="34" column="28" selection-start-line="34" selection-start-column="28" selection-end-line="34" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/role" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/InitDataToDb.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-start-column="2" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="490">
+          <caret line="43" selection-end-line="43" />
           <folding>
-            <element signature="e#0#1851#0" expanded="true" />
+            <element signature="e#0#1459#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/service/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="37" column="35" selection-start-line="37" selection-start-column="35" selection-end-line="37" selection-end-column="35" />
+        <state relative-caret-position="363">
+          <caret line="46" column="51" selection-start-line="46" selection-start-column="51" selection-end-line="46" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1449#1450#0" expanded="true" />
+            <element signature="e#1511#1512#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/user_role" />
-    <entry file="das://4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/database/links/schema/public/table/user_info" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/4a039865-c6ae-4bd4-bad0-dcf18dd6ecc5/console.sql">
+    <entry file="das://bef98bd1-8821-4fb0-986d-7b8f670a2ea0/database/links/schema/public/table/category_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bef98bd1-8821-4fb0-986d-7b8f670a2ea0/database/links/schema/public/table/link_entity">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bef98bd1-8821-4fb0-986d-7b8f670a2ea0/database/links/schema/public/table/role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bef98bd1-8821-4fb0-986d-7b8f670a2ea0/database/links/schema/public/table/user_info">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://bef98bd1-8821-4fb0-986d-7b8f670a2ea0/database/links/schema/public/table/user_role">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bef98bd1-8821-4fb0-986d-7b8f670a2ea0/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/config/HibernateConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="48" column="45" selection-start-line="48" selection-start-column="36" selection-end-line="48" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/data.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="31" lean-forward="true" selection-end-line="1" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <caret line="19" column="44" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/links/validator/UserValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="41" column="64" selection-start-line="41" selection-start-column="56" selection-end-line="41" selection-end-column="64" />
+          <folding>
+            <element signature="e#656#657#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/validation.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="58" lean-forward="true" selection-start-line="4" selection-start-column="58" selection-end-line="4" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1244,7 +1523,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <last-edited>Spring-4.3.18.RELEASE</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

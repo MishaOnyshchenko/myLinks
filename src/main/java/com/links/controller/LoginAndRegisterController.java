@@ -42,7 +42,8 @@ public class LoginAndRegisterController {
         userService.save(userInfoForm);
         securityService.autologin(userInfoForm.getUsername(), userInfoForm.getPasswordConfirm());
 
-        return "redirect:/private/home";
+//        return "redirect:/private/home";
+        return "redirect:/add";
     }
 
     @RequestMapping(value = "/login", method = RequestMethod.GET)

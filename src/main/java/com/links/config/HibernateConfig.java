@@ -39,9 +39,9 @@ public class HibernateConfig {
 
     @Value("${packagesToScan}")
     private String scanPackage;
-    @Value("${hibernate.hbm2ddl.auto}")
+    @Value("${spring.jpa.hibernate.ddl-auto}")
     private String ddlAuto;
-    @Value("${hibernate.dialect}")
+    @Value("${spring.jpa.properties.hibernate.dialect}")
     private String dialect;
 
     @Value("${spring.datasource.initialization-mode}")
@@ -60,7 +60,7 @@ public class HibernateConfig {
     }
 
     @Bean
-    public LocalSessionFactoryBean sessionFactory() throws URISyntaxException {
+    public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
         sessionFactoryBean.setDataSource(dataSource());
         sessionFactoryBean.setPackagesToScan(scanPackage);
