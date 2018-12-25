@@ -5,7 +5,6 @@ D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\service\LinkService
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\service\UserService.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\config\Initializer.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\config\WebSecurityConfig.java
-D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\repository\UserRepository.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\entity\LinkEntity.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\entity\UserInfo.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\entity\CategoryEntity.java
@@ -17,7 +16,6 @@ D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\controller\AddContr
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\controller\LoginAndRegisterController.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\repository\RoleRepo.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\controller\LinkController.java
-D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\repository\RoleRepository.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\service\UserServiceImpl.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\entity\Role.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\repository\UserRepo.java

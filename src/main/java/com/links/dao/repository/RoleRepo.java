@@ -1,9 +1,7 @@
 package com.links.dao.repository;
 
 import com.links.controller.LinkController;
-import com.links.dao.entity.LinkEntity;
 import com.links.dao.entity.Role;
-import com.links.dao.entity.UserInfo;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;

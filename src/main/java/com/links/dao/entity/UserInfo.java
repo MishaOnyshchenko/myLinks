@@ -23,24 +23,18 @@ public class UserInfo {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
+    @Column
     private String username;
 
+    @Column
     private String password;
 
-    transient private String passwordConfirm;
+    private String passwordConfirm;
 
 
 //    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "userInfo")
 ////    @JoinColumn(name = "user_info_id")
 //    private Set<CategoryEntity> menuTittleSet;
-
-//    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL, orphanRemoval = true)
-//    @JoinColumn(name = "user_info_id")
-//    private Set<LinkEntity> links = new HashSet<>();
-
-    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "user_info_id")
-    private Set<CategoryEntity> menuTittleSet;
 
     @ManyToMany
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
