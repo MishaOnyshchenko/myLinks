@@ -2,12 +2,11 @@ com\links\service\UserService.class
 com\links\service\SecurityService.class
 com\links\service\LinkService.class
 com\links\controller\LoginAndRegisterController.class
-com\links\dao\repository\RoleRepository.class
 com\links\config\WebSecurityConfig.class
 com\links\dao\entity\UserInfo.class
-com\links\dao\repository\UserRepository.class
 com\links\dao\entity\CategoryEntity.class
 com\links\config\Initializer.class
+com\links\dao\entity\Role$RoleBuilder.class
 com\links\controller\LinkController.class
 com\links\config\registerGlobalAuthenticationregisterGlobalAuthentication.class
 com\links\dao\entity\LinkEntity.class

@@ -1,8 +1,6 @@
 package com.links.dao.repository;
 
 import com.links.controller.LinkController;
-import com.links.dao.entity.LinkEntity;
-import com.links.dao.entity.Role;
 import com.links.dao.entity.UserInfo;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -28,7 +26,7 @@ public class UserRepo {
     public void saveUser(UserInfo userInfo) {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.saveOrUpdate(userInfo);
-        log.info("Role added to repository: " + userInfo.toString());
+        log.info("User added to repository: " + userInfo.toString());
     }
 
     public UserInfo findByUsername(String username) {

@@ -14,7 +14,6 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
 @Service
-//@Log4j2
 public class SecurityServiceImpl implements SecurityService {
 
     @Autowired
@@ -38,10 +37,13 @@ public class SecurityServiceImpl implements SecurityService {
 
     @Override
     public void autologin(String username, String password) {
+
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
-//        log.info(" userDetails from user service {}", userDetails);
+        logger.info(" userDetails from user service {}", userDetails);
+
         UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(userDetails, password, userDetails.getAuthorities());
-//        log.info("usernamePasswordAuthenticationToken = {}", usernamePasswordAuthenticationToken);
+        logger.info("usernamePasswordAuthenticationToken = {}", usernamePasswordAuthenticationToken);
+
         authenticationManager.authenticate(usernamePasswordAuthenticationToken);
 
         if (usernamePasswordAuthenticationToken.isAuthenticated()) {

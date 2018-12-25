@@ -1,31 +1,24 @@
 package com.links.config;
 
 import org.hibernate.SessionFactory;
-import org.hibernate.jpa.HibernatePersistenceProvider;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
-import org.springframework.orm.jpa.JpaTransactionManager;
-import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
-import java.net.URISyntaxException;
 import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
 @ComponentScan("com.links")
 @PropertySource("classpath:application.properties")
-//@EnableJpaRepositories("com.links.dao.repository")
-
 public class HibernateConfig {
 
     @Value("${spring.datasource.username}")
@@ -49,8 +42,6 @@ public class HibernateConfig {
     private String lazyLoad;
 
 
-
-
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -71,27 +62,6 @@ public class HibernateConfig {
         return properties;
     }
 
-//    @Bean
-//    public LocalContainerEntityManagerFactoryBean entityManagerFactory()  throws URISyntaxException {
-//        LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
-//        entityManagerFactoryBean.setDataSource(dataSource());
-//        entityManagerFactoryBean.setPackagesToScan(scanPackage);
-//        entityManagerFactoryBean.setPersistenceProviderClass(HibernatePersistenceProvider.class);
-//        entityManagerFactoryBean.setJpaProperties(hibernateProperties());
-//
-//        return entityManagerFactoryBean;
-//    }
-//
-//    @Bean
-//    public JpaTransactionManager transactionManager()  throws URISyntaxException  {
-//        JpaTransactionManager transactionManager = new JpaTransactionManager();
-//        transactionManager.setEntityManagerFactory(entityManagerFactory().getObject());
-//
-//        return transactionManager;
-//    }
-
-
-
 
     @Bean
     public LocalSessionFactoryBean sessionFactory() {
@@ -103,7 +73,6 @@ public class HibernateConfig {
     }
 
 
-
     @Bean
     @Autowired
     public HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
@@ -113,13 +82,4 @@ public class HibernateConfig {
     }
 
 
-
-//    private Properties hibernateProperties() {
-//        Properties properties = new Properties();
-//        properties.put("hibernate.dialect", dialect);
-//        properties.put("hibernate.hbm2ddl.auto", ddlAuto);
-//        properties.put("spring.datasource.initialization-mode", initDataSQl);
-//        properties.put("spring.jpa.properties.hibernate.enable_lazy_load_no_trans", lazyLoad);
-//        return properties;
-//    }
 }

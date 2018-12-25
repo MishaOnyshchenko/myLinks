@@ -25,8 +25,8 @@ public class CategoryEntity {
     @JsonManagedReference
     private List<LinkEntity> linkEntityList;
 
-//    @ManyToOne
-//    private UserInfo userInfo;
+    @ManyToOne
+    private UserInfo userInfo;
 
     @Override
     public String toString() {
