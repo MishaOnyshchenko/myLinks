@@ -22,15 +22,19 @@ public class Role {
 
     private String name;
 
-    @ToString.Exclude
+//    @ToString.Exclude
     @ManyToMany(mappedBy = "roles")
     private Set<UserInfo> userInfo;
 
-//    @Override
-//    public String toString() {
-//        return "Role{" +
-//                "id=" + id +
-//                ", name='" + name + '\'' +
-//                '}';
-//    }
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
+    }
+
+    public Role(String name) {
+        this.name = name;
+    }
 }

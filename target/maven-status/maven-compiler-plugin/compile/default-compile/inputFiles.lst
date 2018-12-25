@@ -1,7 +1,6 @@
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\config\registerGlobalAuthenticationregisterGlobalAuthentication.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\service\SecurityService.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\service\UserDetailsServiceImpl.java
-D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\controller\UserController.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\service\LinkService.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\service\UserService.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\config\Initializer.java
@@ -16,8 +15,10 @@ D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\config\WebAppConfig
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\repository\LinkRepository.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\controller\AddController.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\controller\LoginAndRegisterController.java
+D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\repository\RoleRepo.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\controller\LinkController.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\repository\RoleRepository.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\service\UserServiceImpl.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\entity\Role.java
+D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\dao\repository\UserRepo.java
 D:\0_java\0_projects\bookmark\myLink\src\main\java\com\links\validator\UserValidator.java

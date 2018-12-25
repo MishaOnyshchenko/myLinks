@@ -11,9 +11,11 @@ com\links\config\Initializer.class
 com\links\controller\LinkController.class
 com\links\config\registerGlobalAuthenticationregisterGlobalAuthentication.class
 com\links\dao\entity\LinkEntity.class
+com\links\dao\repository\UserRepo.class
 com\links\service\UserServiceImpl.class
 com\links\service\SecurityServiceImpl.class
 com\links\config\HibernateConfig.class
+com\links\dao\repository\RoleRepo.class
 com\links\dao\entity\Role.class
 com\links\dao\repository\LinkRepository.class
 com\links\service\UserDetailsServiceImpl.class

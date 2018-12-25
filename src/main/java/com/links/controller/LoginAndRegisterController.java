@@ -34,13 +34,17 @@ public class LoginAndRegisterController {
 
     @RequestMapping(value = "/registration", method = RequestMethod.POST)
     public String registration(@ModelAttribute("userInfoForm") UserInfo userInfoForm, BindingResult bindingResult) {
-        userValidator.validate(userInfoForm, bindingResult);
-        if (bindingResult.hasErrors()) {
-            return "registration";
-        }
+//        userValidator.validate(userInfoForm, bindingResult);
+//        if (bindingResult.hasErrors()) {
+//            return "registration";
+//        }
+
+        System.out.println("-----------!!!!! UserInfoForm will be sent to userService: " + userInfoForm.getUsername() + "+ passConfirm: " + userInfoForm.getPasswordConfirm());
 
         userService.save(userInfoForm);
-        securityService.autologin(userInfoForm.getUsername(), userInfoForm.getPasswordConfirm());
+
+
+//        securityService.autologin(userInfoForm.getUsername(), userInfoForm.getPasswordConfirm());
 
 //        return "redirect:/private/home";
         return "redirect:/add";
