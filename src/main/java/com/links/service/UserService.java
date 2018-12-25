@@ -8,7 +8,7 @@ public interface UserService {
     void save(UserInfo userInfo);
 
 
-    void updateUserInfo(UserInfo userInfo);
+//    void updateUserInfo(UserInfo userInfo);
 
     UserInfo findByUsername(String username);
 }

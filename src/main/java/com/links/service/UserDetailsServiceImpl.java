@@ -3,6 +3,7 @@ package com.links.service;
 
 import com.links.dao.entity.Role;
 import com.links.dao.entity.UserInfo;
+import com.links.dao.repository.UserRepo;
 import com.links.dao.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
@@ -19,14 +20,18 @@ import java.util.Set;
 @Service(value ="userDetailServiceImpl")
 public class UserDetailsServiceImpl implements UserDetailsService {
 
+//    @Autowired
+//    private UserRepository userRepository;
+
     @Autowired
-    private UserRepository userRepository;
+    private UserRepo userRepo;
 
     @Override
     @Transactional(readOnly = true)
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
 
-        UserInfo userInfo = userRepository.findByUsername(username);
+//        UserInfo userInfo = userRepository.findByUsername(username);
+        UserInfo userInfo = userRepo.findByUsername(username);
         System.out.println("get user info from db {}"  + userInfo);
         Set<GrantedAuthority> grantedAuthorities = new HashSet<>();
         for (Role role : userInfo.getRoles()) {

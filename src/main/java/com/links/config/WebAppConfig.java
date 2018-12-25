@@ -7,6 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
@@ -14,8 +15,8 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration //собственно эта аннотация и говорит о том, что данный класс является Java
 @EnableWebMvc //эта аннотация разрешает нашему проекту использовать MVC;
 @ComponentScan({"com.links"}) //говорит, где искать компоненты проекта.
-@PropertySource({"classpath:validation.properties", "classpath:application.properties"})
-public class WebAppConfig extends WebMvcConfigurerAdapter {
+//@PropertySource({"classpath:validation.properties", "classpath:application.properties"})
+public class WebAppConfig implements WebMvcConfigurer {
 
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
@@ -35,8 +36,8 @@ public class WebAppConfig extends WebMvcConfigurerAdapter {
     @Bean
     public ReloadableResourceBundleMessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-        messageSource.setBasename("classpath:validation.properties");
-//        messageSource.setBasename("classpath:messages");
+//        messageSource.setBasename("classpath:validation.properties");
+        messageSource.setBasename("classpath:messages");
         messageSource.setDefaultEncoding("UTF-8");
         return messageSource;
     }
