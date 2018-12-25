@@ -40,6 +40,10 @@ public class UserInfo {
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
+    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL, orphanRemoval = true)
+    @JoinColumn(name = "user_info_id")
+    private Set<LinkEntity> links;
+
     @Override
     public String toString() {
         return "UserInfo{" +
