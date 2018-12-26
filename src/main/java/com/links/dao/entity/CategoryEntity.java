@@ -25,8 +25,8 @@ public class CategoryEntity {
     @JsonManagedReference
     private List<LinkEntity> linkEntityList;
 
-//    @ManyToOne
-//    private UserInfo userInfo;
+    @ManyToOne
+    private UserInfo userInfo;
 
     @Override
     public String toString() {
@@ -35,4 +35,11 @@ public class CategoryEntity {
                 ", name='" + name + '\'' +
                 '}';
     }
+
+    NotEmpty=This field is required.
+
+    Size.userForm.username=Please use between 6 and 32 characters.
+            Duplicate.userForm.username=Someone already has that username.
+            Size.userForm.password=Try one with at least 8 characters.
+            Diff.userForm.passwordConfirm=These passwords don't match.
 }
