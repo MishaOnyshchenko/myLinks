@@ -13,8 +13,8 @@ import java.util.Set;
  */
 @Getter
 @Setter
-//@EqualsAndHashCode(exclude = {"roles", "menuTittleSet"})
-@EqualsAndHashCode(exclude = "roles")
+@EqualsAndHashCode(exclude = {"roles", "menuTittleSet"})
+//@EqualsAndHashCode(exclude = "roles")
 @Entity
 @Table(name = "user_info")
 public class UserInfo {
@@ -32,17 +32,17 @@ public class UserInfo {
     private String passwordConfirm;
 
 
-//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "userInfo")
-////    @JoinColumn(name = "user_info_id")
-//    private Set<CategoryEntity> menuTittleSet;
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "userInfo")
+//    @JoinColumn(name = "user_info_id")
+    private Set<CategoryEntity> menuTittleSet;
 
     @ManyToMany
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
-    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "user_info_id")
-    private Set<LinkEntity> links;
+//    @OneToMany(fetch = FetchType.EAGER,cascade = CascadeType.ALL, orphanRemoval = true)
+//    @JoinColumn(name = "user_info_id")
+//    private Set<LinkEntity> links;
 
     @Override
     public String toString() {
