@@ -36,7 +36,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http
                 .authorizeRequests()
                 .antMatchers("/resources/**", "/registration").permitAll()
-                .antMatchers("/", "/welcome", "/add").permitAll()
+                .antMatchers("/", "/welcome").permitAll()
                 .antMatchers("admin").hasRole("ADMIN")
                 .antMatchers("/add", "/home").hasRole("USER")
                 .anyRequest().authenticated()
@@ -44,7 +44,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
 
                 .formLogin().loginPage("/login").permitAll()
-                .defaultSuccessUrl("/welcome")
+                .defaultSuccessUrl("/")
                 .and()
                 .logout()
                 .permitAll();
