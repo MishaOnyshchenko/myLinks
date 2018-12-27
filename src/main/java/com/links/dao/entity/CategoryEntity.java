@@ -26,6 +26,7 @@ public class CategoryEntity {
     private List<LinkEntity> linkEntityList;
 
     @ManyToOne
+    @JoinColumn(referencedColumnName = "id")
     private UserInfo userInfo;
 
     @Override
@@ -35,11 +36,4 @@ public class CategoryEntity {
                 ", name='" + name + '\'' +
                 '}';
     }
-
-    NotEmpty=This field is required.
-
-    Size.userForm.username=Please use between 6 and 32 characters.
-            Duplicate.userForm.username=Someone already has that username.
-            Size.userForm.password=Try one with at least 8 characters.
-            Diff.userForm.passwordConfirm=These passwords don't match.
 }
