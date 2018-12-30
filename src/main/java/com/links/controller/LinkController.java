@@ -42,7 +42,6 @@ public class LinkController {
     @RequestMapping(value = "goToMyLink")
     public String showMyLinks() {
         return "redirect:/show";
-//        return "welcome";
     }
 
     @RequestMapping(value = "goToHomePage")

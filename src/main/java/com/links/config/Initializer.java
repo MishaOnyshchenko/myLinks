@@ -14,7 +14,6 @@ public class Initializer extends AbstractAnnotationConfigDispatcherServletInitia
     protected Class<?>[] getRootConfigClasses() {
         return new Class[]
                 {WebAppConfig.class, WebSecurityConfig.class, HibernateConfig.class};
-
     }
 
     // Тут добавляем конфигурацию, в которой инициализируем ViewResolver

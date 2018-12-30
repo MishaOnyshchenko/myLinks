@@ -18,7 +18,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @ComponentScan("com.links")
-@PropertySource("classpath:application.properties")
+@PropertySource("classpath:heroku.properties")
 public class HibernateConfig {
 
     @Value("${spring.datasource.username}")
@@ -41,7 +41,6 @@ public class HibernateConfig {
     @Value("${spring.jpa.properties.hibernate.enable_lazy_load_no_trans}")
     private String lazyLoad;
 
-
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
@@ -62,7 +61,6 @@ public class HibernateConfig {
         return properties;
     }
 
-
     @Bean
     public LocalSessionFactoryBean sessionFactory() {
         LocalSessionFactoryBean sessionFactoryBean = new LocalSessionFactoryBean();
@@ -72,7 +70,6 @@ public class HibernateConfig {
         return sessionFactoryBean;
     }
 
-
     @Bean
     @Autowired
     public HibernateTransactionManager transactionManager(SessionFactory sessionFactory) {
@@ -80,6 +77,4 @@ public class HibernateConfig {
         transactionManager.setSessionFactory(sessionFactory);
         return transactionManager;
     }
-
-
 }

@@ -56,11 +56,6 @@ public class LoginAndRegisterController {
 
         securityService.autologin(userInfoForm.getUsername(), userInfoForm.getPasswordConfirm());
 
-//        return "redirect:/private/home";
         return "add";
     }
-
-
-
-
 }

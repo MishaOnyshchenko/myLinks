@@ -13,7 +13,6 @@ import org.springframework.web.servlet.view.JstlView;
 @Configuration //собственно эта аннотация и говорит о том, что данный класс является Java
 @EnableWebMvc //эта аннотация разрешает нашему проекту использовать MVC;
 @ComponentScan({"com.links"}) //говорит, где искать компоненты проекта.
-//@PropertySource({"classpath:validation.properties", "classpath:application.properties"})
 public class WebAppConfig implements WebMvcConfigurer {
 
     @Override
@@ -34,7 +33,6 @@ public class WebAppConfig implements WebMvcConfigurer {
     @Bean
     public ReloadableResourceBundleMessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-//        messageSource.setBasename("classpath:validation.properties");
         messageSource.setBasename("classpath:messages");
         messageSource.setDefaultEncoding("UTF-8");
         return messageSource;

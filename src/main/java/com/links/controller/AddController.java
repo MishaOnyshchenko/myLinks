@@ -34,7 +34,6 @@ public class AddController {
         List<CategoryEntity> categories = linkService.allCategories();
         model.addAttribute("categories", categories);
 
-//        return "view/add";
         return "add";
     }
 
@@ -61,7 +60,6 @@ public class AddController {
         model.addAttribute("message3", "Your links in category " + category);
         model.addAttribute("linksFromChosenCategory", linksFromChosenCategory);
 
-//        return "view/category";
         return "category";
     }
 
