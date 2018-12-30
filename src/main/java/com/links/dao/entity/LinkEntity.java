@@ -25,9 +25,12 @@ public class LinkEntity {
     @Column
     private String description;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JsonBackReference
-    @JsonIgnore
+//    @ManyToOne(fetch = FetchType.LAZY)
+//    @JsonBackReference
+//    @JsonIgnore
+//    private CategoryEntity categoryEntity;
+
+    @ManyToOne
     private CategoryEntity categoryEntity;
 
     @Override

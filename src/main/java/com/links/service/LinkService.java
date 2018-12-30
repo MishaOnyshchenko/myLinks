@@ -3,14 +3,19 @@ package com.links.service;
 import com.links.controller.LinkController;
 import com.links.dao.entity.CategoryEntity;
 import com.links.dao.entity.LinkEntity;
+import com.links.dao.entity.UserInfo;
 import com.links.dao.repository.LinkRepository;
 import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -24,13 +29,34 @@ public class LinkService {
     @Autowired
     private LinkRepository linkRepository;
 
+    @Autowired
+    private UserService userService;
+
 
     public List<LinkEntity> allLinks() {
-        return linkRepository.linkList();
+
+        List<LinkEntity> linkEntityListByUserInfo = new ArrayList<>();
+
+        List<CategoryEntity> categoryEntityListByUserInfo = allCategories();
+        log.info("Received categories by username from repository to service: " + categoryEntityListByUserInfo);
+
+        for (CategoryEntity category: categoryEntityListByUserInfo) {
+            linkEntityListByUserInfo.addAll(category.getLinkEntityList());
+        }
+        log.info("Full links list from all categories by username in service: " + categoryEntityListByUserInfo);
+
+        return linkEntityListByUserInfo;
+
+//        return linkRepository.linkList();
     }
 
     public List<CategoryEntity> allCategories() {
-        return linkRepository.categoryList();
+        UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        UserInfo userInfo = userService.findByUsername(userDetails.getUsername());
+
+        return linkRepository.findMenuByUsename(userInfo.getUsername());
+
+//        return linkRepository.categoryList();
     }
 
 
@@ -52,6 +78,11 @@ public class LinkService {
 
 
     public void addCategory(CategoryEntity categoryEntity) {
+        UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+        UserInfo userInfo = userService.findByUsername(userDetails.getUsername());
+
+        categoryEntity.setUserInfo(userInfo);
+
         linkRepository.addCategory(categoryEntity);
         log.info("Category was sent for saving from service to repository: " + categoryEntity);
     }
@@ -89,4 +120,11 @@ public class LinkService {
             }
         }
     }
+
+//    public List<CategoryEntity> findMenuByUser(String username) {
+//        return LinkRepository.findMenuByUsername(username);
+//    }
+//    public List<LinkEntity> findBookmarkByMenu(CategoryEntity menu) {
+//        return bookmarkRepository.findBookmarkByMenu(menu);
+//    }
 }

@@ -19,22 +19,35 @@ public class LinkController {
 
 
     @RequestMapping
+    public String showHomePage(Model model) {
+        model.addAttribute("message", "Welcome to myLinks");
+        return "welcome";
+    }
+
+    @RequestMapping("/home")
     public String showWelcome(Model model) {
         List<LinkEntity> links = linkService.allLinks();
         model.addAttribute("links", links);
 
-        model.addAttribute("message", "Welcome to myLinks");
+        model.addAttribute("message", "Welcome to myLinks!");
 
         List<CategoryEntity> categories = linkService.allCategories();
         model.addAttribute("categories", categories);
 
-        return "welcome";
+        return "home";
+
     }
 
 
-    @RequestMapping(value = "go")
-    public String show() {
+    @RequestMapping(value = "goToMyLink")
+    public String showMyLinks() {
         return "redirect:/show";
+//        return "welcome";
+    }
+
+    @RequestMapping(value = "goToHomePage")
+    public String show() {
+        return "redirect:/home";
     }
 
 
