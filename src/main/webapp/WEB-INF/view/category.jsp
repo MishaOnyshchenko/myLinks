@@ -3,7 +3,9 @@
 
 <html>
 <head>
-    <title>MyLinks</title>
+    <title>category</title>
+    <link href="${contextPath}/resources/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>
 
@@ -18,7 +20,7 @@
 
     <div>
         <form action="/show">
-            <input type="submit" value="return to MyLinks">
+            <input type="submit" value="return to myLinks">
         </form>
     </div>
 

@@ -3,6 +3,7 @@ package com.links.dao.repository;
 import com.links.controller.LinkController;
 import com.links.dao.entity.CategoryEntity;
 import com.links.dao.entity.LinkEntity;
+import com.links.dao.entity.UserInfo;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
@@ -12,6 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Repository
@@ -69,4 +71,40 @@ public class LinkRepository {
             log.info("Category deleted from repository: " + categoryEntity);
         }
     }
+
+
+//    public List<CategoryEntity> findMenuByUsername(String username) {
+//        Session currentSession = sessionFactory.getCurrentSession();
+//        Query<CategoryEntity> theQuery = currentSession.createQuery("from CategoryEntity", CategoryEntity.class);
+//
+//        List<CategoryEntity> categoriesFromRepo = theQuery.getResultList();
+//        for (CategoryEntity category : categoriesFromRepo) {
+//            if (category.ge){}
+//        }
+//
+//
+//        return
+//    }
+
+    public List<CategoryEntity> findMenuByUsename(String username) {
+
+        Session currentSession = sessionFactory.getCurrentSession();
+        Query<CategoryEntity> theQuery = currentSession.createQuery("from CategoryEntity", CategoryEntity.class);
+
+        List<CategoryEntity> categoriesFromRepo = theQuery.getResultList();
+
+        List<CategoryEntity> categoriesByUserName = new ArrayList<>();
+
+        for (CategoryEntity category : categoriesFromRepo) {
+            if (category.getUserInfo().getUsername().equals(username)){
+                categoriesByUserName.add(category);
+            }
+        }
+
+        log.info("Received categories by username from repository: " + categoriesByUserName);
+
+        return categoriesByUserName;
+    }
+
+
 }
