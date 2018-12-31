@@ -18,7 +18,7 @@ import java.util.Properties;
 @Configuration
 @EnableTransactionManagement
 @ComponentScan("com.links")
-@PropertySource("classpath:heroku.properties")
+@PropertySource("classpath:application.properties")
 public class HibernateConfig {
 
     @Value("${spring.datasource.username}")
