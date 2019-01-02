@@ -748,7 +748,7 @@
     <property name="SearchEverywhereHistoryKey" value="ru_RU&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/ext/localedata.jar!/sun/util/resources/ru/CurrencyNames_ru_RU.class&#10;AbstractMessageSource&#9;PSI&#9;JAVA://org.springframework.context.support.AbstractMessageSource&#10;Log4JMonitor&#9;ACTION&#9;ActivateLog4jMonitorToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546458253963" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546458902617" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../eugen/bookmarksSpringMvc" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
