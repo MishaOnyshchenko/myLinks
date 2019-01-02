@@ -21,7 +21,6 @@ public class Role {
     private Long id;
     private String name;
 
-//    @ToString.Exclude
     @ManyToMany(mappedBy = "roles")
     private Set<UserInfo> userInfo;
 

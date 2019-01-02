@@ -80,6 +80,4 @@ public class HibernateConfig {
         transactionManager.setSessionFactory(sessionFactory);
         return transactionManager;
     }
-
-
 }

@@ -48,8 +48,6 @@ public class LinkService {
         log.info("Full links list from all categories by username in service: " + categoryEntityListByUserInfo);
 
         return linkEntityListByUserInfo;
-
-//        return linkRepository.linkList();
     }
 
     public List<CategoryEntity> allCategories() {
@@ -57,8 +55,6 @@ public class LinkService {
         UserInfo userInfo = userService.findByUsername(userDetails.getUsername());
 
         return linkRepository.findMenuByUsename(userInfo.getUsername());
-
-//        return linkRepository.categoryList();
     }
 
 
@@ -122,11 +118,4 @@ public class LinkService {
             }
         }
     }
-
-//    public List<CategoryEntity> findMenuByUser(String username) {
-//        return LinkRepository.findMenuByUsername(username);
-//    }
-//    public List<LinkEntity> findBookmarkByMenu(CategoryEntity menu) {
-//        return bookmarkRepository.findBookmarkByMenu(menu);
-//    }
 }

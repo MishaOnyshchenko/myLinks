@@ -16,7 +16,6 @@ import java.util.Set;
 
 @Data
 @EqualsAndHashCode(exclude = {"roles", "listMenu"})
-//@EqualsAndHashCode(exclude = "roles")
 @Entity
 @Table(name = "user_info")
 public class UserInfo {
@@ -32,14 +31,8 @@ public class UserInfo {
     @JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
     private Set<Role> roles;
 
-
-//    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "userInfo")
-//    private Set<CategoryEntity> menuTittleSet;
-
     @OneToMany
     private List<CategoryEntity> listMenu;
-
-
 
     @Override
     public String toString() {

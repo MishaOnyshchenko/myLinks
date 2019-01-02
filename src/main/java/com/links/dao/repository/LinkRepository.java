@@ -73,21 +73,7 @@ public class LinkRepository {
     }
 
 
-//    public List<CategoryEntity> findMenuByUsername(String username) {
-//        Session currentSession = sessionFactory.getCurrentSession();
-//        Query<CategoryEntity> theQuery = currentSession.createQuery("from CategoryEntity", CategoryEntity.class);
-//
-//        List<CategoryEntity> categoriesFromRepo = theQuery.getResultList();
-//        for (CategoryEntity category : categoriesFromRepo) {
-//            if (category.ge){}
-//        }
-//
-//
-//        return
-//    }
-
     public List<CategoryEntity> findMenuByUsename(String username) {
-
         Session currentSession = sessionFactory.getCurrentSession();
         Query<CategoryEntity> theQuery = currentSession.createQuery("from CategoryEntity", CategoryEntity.class);
 
@@ -100,11 +86,8 @@ public class LinkRepository {
                 categoriesByUserName.add(category);
             }
         }
-
         log.info("Received categories by username from repository: " + categoriesByUserName);
 
         return categoriesByUserName;
     }
-
-
 }
