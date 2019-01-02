@@ -24,7 +24,7 @@
         </c:if>
 
         <div>
-            <h1>${message}</h1>
+            <h2>${message}</h2>
         </div>
 
         <div>

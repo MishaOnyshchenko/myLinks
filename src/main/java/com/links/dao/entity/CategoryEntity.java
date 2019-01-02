@@ -23,18 +23,11 @@ public class CategoryEntity {
 
     @OneToMany(mappedBy = "categoryEntity", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
     @JsonManagedReference
-//    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
     private List<LinkEntity> linkEntityList;
 
     @ManyToOne
     @JoinColumn(referencedColumnName = "id")
     private UserInfo userInfo;
 
-//    @Override
-//    public String toString() {
-//        return "CategoryEntity{" +
-//                "id=" + id +
-//                ", name='" + name + '\'' +
-//                '}';
-//    }
+
 }

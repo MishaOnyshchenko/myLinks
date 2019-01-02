@@ -55,9 +55,6 @@ public class UserServiceImpl implements UserService {
         log.info("roles: " + roles);
 
         userRepo.saveUser(userInfo);
-
-
-
     }
 
 //    @Override
@@ -69,6 +66,5 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserInfo findByUsername(String username) {
         return userRepo.findByUsername(username);
-
     }
 }
