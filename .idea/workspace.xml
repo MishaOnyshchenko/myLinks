@@ -11,10 +11,6 @@
   <component name="ChangeListManager">
     <list default="true" id="09bad567-d3c9-457b-85d5-7252693aa86e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/add.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/add.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/category.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/category.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/welcome.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/welcome.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -248,7 +244,7 @@
         <counts>
           <entry key="java" value="2641" />
           <entry key="jsp" value="557" />
-          <entry key="properties" value="336" />
+          <entry key="properties" value="368" />
           <entry key="sql" value="46" />
           <entry key="txt" value="13" />
           <entry key="xml" value="76" />
@@ -259,7 +255,7 @@
           <entry key="JAVA" value="2641" />
           <entry key="JSP" value="557" />
           <entry key="PLAIN_TEXT" value="13" />
-          <entry key="Properties" value="336" />
+          <entry key="Properties" value="368" />
           <entry key="SQL" value="46" />
           <entry key="XML" value="76" />
         </counts>
@@ -283,11 +279,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
+            <state relative-caret-position="170">
+              <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -372,11 +368,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/welcome.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="447">
-              <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+            <state relative-caret-position="379">
+              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
             </state>
           </provider>
         </entry>
@@ -466,11 +462,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/links/service/SecurityServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/service/SecurityService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/links/service/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/welcome.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/home.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/add.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/view/category.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
   </component>
@@ -748,7 +744,7 @@
     <property name="SearchEverywhereHistoryKey" value="ru_RU&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_191/jre/lib/ext/localedata.jar!/sun/util/resources/ru/CurrencyNames_ru_RU.class&#10;AbstractMessageSource&#9;PSI&#9;JAVA://org.springframework.context.support.AbstractMessageSource&#10;Log4JMonitor&#9;ACTION&#9;ActivateLog4jMonitorToolWindow" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546458902617" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546459500325" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../eugen/bookmarksSpringMvc" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -935,7 +931,7 @@
       <workItem from="1546106396018" duration="9886000" />
       <workItem from="1546162848593" duration="1249000" />
       <workItem from="1546443796157" duration="1492000" />
-      <workItem from="1546455422248" duration="2778000" />
+      <workItem from="1546455422248" duration="3351000" />
     </task>
     <task id="LOCAL-00001" summary="welcome updated">
       <created>1541894644236</created>
@@ -948,7 +944,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="309364000" />
+    <option name="totallyTimeSpent" value="309937000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -961,7 +957,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="UI Designer" order="0" />
       <window_info id="Favorites" order="1" side_tool="true" />
@@ -970,11 +965,11 @@
       <window_info id="Learn" order="4" />
       <window_info id="Web" order="5" sideWeight="0.5016949" side_tool="true" weight="0.27506113" />
       <window_info id="Designer" order="6" />
-      <window_info active="true" content_ui="combo" id="Project" order="7" sideWeight="0.49830508" visible="true" weight="0.29339853" />
+      <window_info content_ui="combo" id="Project" order="7" sideWeight="0.49830508" visible="true" weight="0.29339853" />
       <window_info id="Structure" order="8" sideWeight="0.5007429" side_tool="true" weight="0.22371638" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3314154" />
       <window_info anchor="bottom" id="Spring" order="1" weight="0.32796317" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.2347526" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.2347526" />
       <window_info anchor="bottom" id="Event Log" order="3" sideWeight="0.50183374" side_tool="true" weight="0.36363637" />
       <window_info anchor="bottom" id="Messages" order="4" weight="0.3256617" />
       <window_info anchor="bottom" id="Java Enterprise" order="5" weight="0.32796317" />
@@ -1244,13 +1239,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/add.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -1288,8 +1276,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/view/welcome.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="46" column="14" lean-forward="true" selection-start-line="46" selection-start-column="14" selection-end-line="46" selection-end-column="14" />
+        <state relative-caret-position="379">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
         </state>
       </provider>
     </entry>
