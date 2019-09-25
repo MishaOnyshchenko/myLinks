@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
     <head>
         <meta charset="utf-8">
@@ -17,9 +17,7 @@
     </head>
 
     <body>
-
         <div class="container">
-
             <div>
                 <h1>${message}</h1>
             </div>
@@ -37,14 +35,11 @@
             <br>
 
         </div>
-
     </body>
-
 
     <footer>
         <div class="container">
             <a href="https://www.google.com.ua" target="_blank">Google</a>
         </div>
     </footer>
-
 </html>

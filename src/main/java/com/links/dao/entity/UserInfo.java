@@ -2,17 +2,11 @@ package com.links.dao.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.List;
 import java.util.Set;
 
-/**
- * Объект юзер инфо который связан с объектом роли как многие ко многим и при генерации таблиц
- * создадут 3-ю таблицу которая и будет связывать эти 2 сущности по ID
- */
 
 @Data
 @EqualsAndHashCode(exclude = {"roles", "listMenu"})
@@ -21,7 +15,7 @@ import java.util.Set;
 public class UserInfo {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String username;
     private String password;
@@ -43,4 +37,5 @@ public class UserInfo {
                 ", passwordConfirm='" + passwordConfirm + '\'' +
                 '}';
     }
+
 }

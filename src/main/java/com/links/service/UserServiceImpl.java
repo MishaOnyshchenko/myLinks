@@ -1,8 +1,5 @@
 package com.links.service;
 
-
-
-
 import com.links.controller.LinkController;
 import com.links.dao.entity.Role;
 import com.links.dao.entity.UserInfo;
@@ -19,6 +16,7 @@ import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;
 
+
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -31,7 +29,7 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private BCryptPasswordEncoder bCryptPasswordEncoder;
 
-    static final Logger log = LoggerFactory.getLogger(LinkController.class);
+    private static final Logger log = LoggerFactory.getLogger(UserServiceImpl.class);
 
 
     @Override
@@ -42,29 +40,24 @@ public class UserServiceImpl implements UserService {
 
         Role createRole = new Role("ROLE_USER");
         roleRepo.addRole(createRole);
-        log.info("!!!!!!!!!!!!!!!Send role to Repo-------------" + createRole.getName());
+        log.info("!!! Send role to Repo---" + createRole.getName());
 
 
         Role receivedRole = roleRepo.getRoleById(1L);
-        log.info("!!!!!!!!!!!!!!!Received from Repo-------------" + receivedRole.getName());
+        log.info("!!! Received from Repo---" + receivedRole.getName());
 
         Set<Role> roles = new HashSet<>(Collections.singleton(receivedRole));
         userInfo.setRoles(roles);
 
-        log.info("!!!!!! Will be sent to UserRepository " + userInfo);
-        log.info("roles: " + roles);
+        log.info("!!! Will be sent to UserRepository " + userInfo);
+        log.info("Roles: " + roles);
 
         userRepo.saveUser(userInfo);
     }
-
-//    @Override
-//    @Transactional
-//    public void updateUserInfo(UserInfo userInfo){
-//        userRepository.saveAndFlush(userInfo);
-//    }
 
     @Override
     public UserInfo findByUsername(String username) {
         return userRepo.findByUsername(username);
     }
+
 }

@@ -38,7 +38,6 @@ public class LinkController {
 
     }
 
-
     @RequestMapping(value = "goToMyLink")
     public String showMyLinks() {
         return "redirect:/show";
@@ -48,6 +47,5 @@ public class LinkController {
     public String show() {
         return "redirect:/home";
     }
-
 
 }

@@ -11,8 +11,9 @@ import org.springframework.validation.ValidationUtils;
 import org.springframework.validation.Validator;
 
 @Component
-@PropertySource("classpath:validation.properties")
+@PropertySource("classpath:message.properties")
 public class UserValidator implements Validator {
+
     @Autowired
     private UserService userService;
 
@@ -42,4 +43,5 @@ public class UserValidator implements Validator {
             errors.rejectValue("passwordConfirm", "Diff.userForm.passwordConfirm");
         }
     }
+
 }

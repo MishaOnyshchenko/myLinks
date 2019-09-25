@@ -1,6 +1,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+
 <html>
 <head>
     <meta charset="utf-8">
@@ -14,20 +14,16 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <title>myLinks</title>
-
 </head>
 
 <body>
-
     <div class="container">
 
         <c:if test="${pageContext.request.userPrincipal.name != null}">
             <form id="logoutForm" method="POST" action="${contextPath}/logout">
                 <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
             </form>
-
             <h2>${pageContext.request.userPrincipal.name} | <a onclick="document.forms['logoutForm'].submit()">Logout</a></h2>
-
         </c:if>
 
         <div>
@@ -96,7 +92,6 @@
             </form>
         </div>
 
-
         <div>
             <form action="/show/category/links" method="GET">
                 <h1>${message3}</h1>
@@ -119,8 +114,5 @@
         </div>
 
     </div>
-
-
-
 </body>
 </html>

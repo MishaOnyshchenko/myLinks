@@ -3,6 +3,7 @@ package com.links.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.context.support.ReloadableResourceBundleMessageSource;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -10,10 +11,10 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
 
-@Configuration //собственно эта аннотация и говорит о том, что данный класс является Java
-@EnableWebMvc //эта аннотация разрешает нашему проекту использовать MVC;
-@ComponentScan({"com.links"}) //говорит, где искать компоненты проекта.
-//@PropertySource({"classpath:validation.properties", "classpath:application.properties"})
+@Configuration
+@EnableWebMvc
+@ComponentScan({"com.links"})
+@PropertySource({"classpath:application.properties"})
 public class WebAppConfig implements WebMvcConfigurer {
 
     @Override
@@ -22,7 +23,7 @@ public class WebAppConfig implements WebMvcConfigurer {
                 .setCachePeriod(Integer.valueOf("31556926"));
     }
 
-    @Bean //указывает на то что это инициализация бина, и он будет создан с помощью DI.
+    @Bean
     public InternalResourceViewResolver viewResolver() {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
         resolver.setViewClass(JstlView.class);
@@ -34,7 +35,6 @@ public class WebAppConfig implements WebMvcConfigurer {
     @Bean
     public ReloadableResourceBundleMessageSource messageSource() {
         ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-//        messageSource.setBasename("classpath:validation.properties");
         messageSource.setBasename("classpath:messages");
         messageSource.setDefaultEncoding("UTF-8");
         return messageSource;

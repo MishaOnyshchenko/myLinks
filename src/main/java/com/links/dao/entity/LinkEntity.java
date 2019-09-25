@@ -1,19 +1,17 @@
 package com.links.dao.entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.*;
+import lombok.Data;
 
 import javax.persistence.*;
 
 
 @Data
 @Entity(name = "LinkEntity")
-@Table(name="link_entity")
+@Table(name = "link_entity")
 public class LinkEntity {
 
     @Id
-    @GeneratedValue(strategy=GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column

@@ -11,7 +11,6 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.core.userdetails.UserDetails;
-import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,7 +23,7 @@ import java.util.List;
 @Service
 public class LinkService {
 
-    static final Logger log = LoggerFactory.getLogger(LinkController.class);
+    private static final Logger log = LoggerFactory.getLogger(LinkController.class);
 
     @Autowired
     private LinkRepository linkRepository;
@@ -40,7 +39,7 @@ public class LinkService {
         List<CategoryEntity> categoryEntityListByUserInfo = allCategories();
         log.info("Received categories by username from repository to service: " + categoryEntityListByUserInfo);
 
-        for (CategoryEntity category: categoryEntityListByUserInfo) {
+        for (CategoryEntity category : categoryEntityListByUserInfo) {
             linkEntityListByUserInfo.addAll(category.getLinkEntityList());
         }
         log.info("Full links list from all categories by username in service: " + categoryEntityListByUserInfo);
@@ -52,24 +51,23 @@ public class LinkService {
         UserDetails userDetails = (UserDetails) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
         UserInfo userInfo = userService.findByUsername(userDetails.getUsername());
 
-        return linkRepository.findMenuByUsename(userInfo.getUsername());
+        return linkRepository.findMenuByUsername(userInfo.getUsername());
     }
 
 
     public void addLink(LinkEntity linkEntity, String category) {
         CategoryEntity categoryEntity = new CategoryEntity();
 
-        for (CategoryEntity c : linkRepository.categoryList()) {
-            if (c.getName().equals(category)) {
-                categoryEntity = c;
+        for (CategoryEntity savedCategory : linkRepository.categoryList()) {
+            if (savedCategory.getName().equals(category)) {
+                categoryEntity = savedCategory;
             }
         }
-        log.info("Category received by its name from repository for adding to linkEntity in service : " + categoryEntity);
-
+        log.info("Category received by name from repository for adding to linkEntity in service : " + categoryEntity);
         linkEntity.setCategoryEntity(categoryEntity);
 
         linkRepository.addLink(linkEntity);
-        log.info("LinkEntity with added category was sent for saving to repository: " + linkEntity);
+        log.info("LinkEntity with added category were sent for saving to repository: " + linkEntity);
     }
 
 
@@ -87,9 +85,9 @@ public class LinkService {
     public List<LinkEntity> showLinksByCategory(String category) {
         List<LinkEntity> linkEntityList = new LinkedList<>();
 
-        for (CategoryEntity c : linkRepository.categoryList()) {
-            if(c.getName().equals(category)){
-                linkEntityList = c.getLinkEntityList();
+        for (CategoryEntity savedLink : linkRepository.categoryList()) {
+            if (savedLink.getName().equals(category)) {
+                linkEntityList = savedLink.getLinkEntityList();
             }
         }
         log.info("List of the Links received from repository to service and will be returned to controller: " + linkEntityList);
@@ -98,22 +96,22 @@ public class LinkService {
 
     public void deleteLink(LinkEntity linkEntity) {
 
-        for (LinkEntity entity : linkRepository.linkList()) {
-            if (entity.getName().equals(linkEntity.getName())) {
-                linkRepository.deleteLinkByName(entity);
-                log.info("LinkEntity was sent from service to repository for deleting: " + entity);
+        for (LinkEntity savedLink : linkRepository.linkList()) {
+            if (savedLink.getName().equals(linkEntity.getName())) {
+                linkRepository.deleteLinkByName(savedLink);
+                log.info("LinkEntity was sent from service to repository for deleting: " + savedLink);
             }
         }
     }
-
 
     public void deleteCategory(CategoryEntity categoryEntity) {
 
-        for (CategoryEntity entity : linkRepository.categoryList()) {
-            if (entity.getName().equals(categoryEntity.getName())) {
-                linkRepository.deleteCategoryByName(entity);
-                log.info("CategoryEntity was sent from service to repository for deleting: " + entity);
+        for (CategoryEntity savedCategory : linkRepository.categoryList()) {
+            if (savedCategory.getName().equals(categoryEntity.getName())) {
+                linkRepository.deleteCategoryByName(savedCategory);
+                log.info("CategoryEntity was sent from service to repository for deleting: " + savedCategory);
             }
         }
     }
+
 }

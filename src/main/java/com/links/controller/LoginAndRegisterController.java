@@ -1,13 +1,10 @@
 package com.links.controller;
 
 
-
 import com.links.dao.entity.UserInfo;
 import com.links.service.SecurityService;
 import com.links.service.UserService;
 import com.links.validator.UserValidator;
-
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -29,10 +26,10 @@ public class LoginAndRegisterController {
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login(Model model, String error, String logout) {
         if (error != null) {
-            model.addAttribute("error", "Your username and password is invalid.");
+            model.addAttribute("error", "Invalid username and password.");
         }
         if (logout != null) {
-            model.addAttribute("message", "You have been logged out successfully.");
+            model.addAttribute("message", "Logged out successfully.");
         }
         return "login";
     }
@@ -49,17 +46,10 @@ public class LoginAndRegisterController {
         if (bindingResult.hasErrors()) {
             return "registration";
         }
-
-        System.out.println("-----------!!!!! UserInfoForm will be sent to userService: " + userInfoForm.getUsername() + "+ passConfirm: " + userInfoForm.getPasswordConfirm());
-
         userService.save(userInfoForm);
-
         securityService.autologin(userInfoForm.getUsername(), userInfoForm.getPasswordConfirm());
 
         return "add";
     }
-
-
-
 
 }

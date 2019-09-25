@@ -20,7 +20,7 @@ public class UserRepo {
     @Autowired
     private SessionFactory sessionFactory;
 
-    static final Logger log = LoggerFactory.getLogger(LinkController.class);
+    private static final Logger log = LoggerFactory.getLogger(LinkController.class);
 
 
     public void saveUser(UserInfo userInfo) {

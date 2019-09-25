@@ -17,16 +17,16 @@ import java.util.List;
 @Transactional
 public class RoleRepo {
 
+    private static final Logger log = LoggerFactory.getLogger(LinkController.class);
+
     @Autowired
     private SessionFactory sessionFactory;
-
-    static final Logger log = LoggerFactory.getLogger(LinkController.class);
 
 
     public void addRole(Role role) {
         Session currentSession = sessionFactory.getCurrentSession();
         currentSession.saveOrUpdate(role);
-        log.info("Role added to repository: " + role.toString());
+        log.info("Role added to the repository: " + role.toString());
     }
 
     public Role getRoleById(Long id) {
@@ -36,9 +36,9 @@ public class RoleRepo {
         List<Role> roles = theQuery.getResultList();
 
         Role result = null;
-        for (Role r : roles) {
-            if (r.getId().equals(id)) {
-                result = r;
+        for (Role role : roles) {
+            if (role.getId().equals(id)) {
+                result = role;
             }
         }
         return result;

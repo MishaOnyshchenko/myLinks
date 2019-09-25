@@ -37,21 +37,18 @@ public class AddController {
         return "add";
     }
 
-
     @RequestMapping(value = "/add/link")
-    public String addLink(@ModelAttribute LinkEntity linkEntity, @RequestParam ("category") String category) {
+    public String addLink(@ModelAttribute LinkEntity linkEntity, @RequestParam("category") String category) {
         log.info("Category received from client for saving new link and will be sent to service: " + category);
 
-        System.out.println();
         linkService.addLink(linkEntity, category);
         log.info("LinkEntity was sent to service from controller: " + linkEntity);
 
         return "redirect:/show";
     }
 
-
     @RequestMapping(value = "/category/links")
-    public String getLinksByCategory(@RequestParam ("category") String category, Model model) {
+    public String getLinksByCategory(@RequestParam("category") String category, Model model) {
         log.info("Client asked to show all links by category: " + category);
 
         List<LinkEntity> linksFromChosenCategory = linkService.showLinksByCategory(category);
@@ -63,13 +60,11 @@ public class AddController {
         return "category";
     }
 
-
     @RequestMapping(value = "/add/category")
     public String addCategory(@ModelAttribute CategoryEntity category) {
         linkService.addCategory(category);
         return "redirect:/show";
     }
-
 
     @RequestMapping(value = "/del/link")
     public String deleteLink(@ModelAttribute LinkEntity linkEntity) {
@@ -77,10 +72,10 @@ public class AddController {
         return "redirect:/show";
     }
 
-
     @RequestMapping(value = "/del/category")
     public String deleteCategory(@ModelAttribute CategoryEntity categoryEntity) {
         linkService.deleteCategory(categoryEntity);
         return "redirect:/show";
     }
+
 }

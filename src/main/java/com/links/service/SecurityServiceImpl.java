@@ -27,7 +27,7 @@ public class SecurityServiceImpl implements SecurityService {
     public String findLoggedInUsername() {
         Object userDetails = SecurityContextHolder.getContext().getAuthentication().getDetails();
         if (userDetails instanceof UserDetails) {
-            logger.info(" return userDetails instance from SecurityContextHolder {}", userDetails);
+            logger.info("Return userDetails instance from SecurityContextHolder {}", userDetails);
             return ((UserDetails) userDetails).getUsername();
         }
         return null;
@@ -37,10 +37,10 @@ public class SecurityServiceImpl implements SecurityService {
     public void autologin(String username, String password) {
 
         UserDetails userDetails = userDetailsService.loadUserByUsername(username);
-        logger.info(" userDetails from user service {}", userDetails);
+        logger.info("UserDetails from user service {}", userDetails);
 
         UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(userDetails, password, userDetails.getAuthorities());
-        logger.info("usernamePasswordAuthenticationToken = {}", usernamePasswordAuthenticationToken);
+        logger.info("UsernamePasswordAuthenticationToken = {}", usernamePasswordAuthenticationToken);
 
         authenticationManager.authenticate(usernamePasswordAuthenticationToken);
 
@@ -49,4 +49,5 @@ public class SecurityServiceImpl implements SecurityService {
             logger.debug(String.format("Auto login %s successfully!", username));
         }
     }
+
 }
