@@ -30,6 +30,8 @@
 
 <div class="container">
 
+    <%--@elvariable id="userInfoForm" type=""--%>
+    <%--check userInfoForm and comment above--%>
     <form:form method="POST" action="/registration" modelAttribute="userInfoForm" class="form-signin">
         <h2 class="form-signin-heading">Create your account</h2>
         <spring:bind path="username">
